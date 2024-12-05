@@ -1,0 +1,447 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "iqYHqr3pWfj21KAZNGZebV",
+      "projectApiToken": "61Pb0Qe56yIOMITsS3T4o0VTOth1hZitZsVUF2Y5rtOtUMfcSUjrGCBQbrwtcJZFvCg2XgWaPsGDvz5w",
+      "projectName": "Blumemail Landing Website (NEW)",
+      "version": "latest",
+      "cssFilePath": "plasmic/blumemail_landing_website_new/plasmic.module.css",
+      "components": [
+        {
+          "id": "2BxzMSVYdCEk",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/"
+        },
+        {
+          "id": "X0bdkv4xmtEE",
+          "name": "Navbar",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicNavbar.tsx",
+          "importSpec": {
+            "modulePath": "Navbar.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicNavbar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "uqcHB_pa3qnb",
+          "name": "Logo",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicLogo.tsx",
+          "importSpec": {
+            "modulePath": "Logo.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicLogo.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "IKalveoma9Lb",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "pJ7Xt-Q9Heqm",
+          "name": "FooterSection",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicFooterSection.tsx",
+          "importSpec": {
+            "modulePath": "FooterSection.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicFooterSection.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "9tRKoAxzr92y",
+          "name": "PriceCard",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicPriceCard.tsx",
+          "importSpec": {
+            "modulePath": "PriceCard.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicPriceCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ugejia25uuRX",
+          "name": "Section",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicSection.tsx",
+          "importSpec": {
+            "modulePath": "Section.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicSection.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "zDHt8RNREuHR",
+          "name": "DiagramCard",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicDiagramCard.tsx",
+          "importSpec": {
+            "modulePath": "DiagramCard.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicDiagramCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "0HkxE5m16msS",
+          "name": "ProductCard",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicProductCard.tsx",
+          "importSpec": {
+            "modulePath": "ProductCard.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicProductCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "nAsFMT_b1Eiv",
+          "name": "DetailAbout",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicDetailAbout.tsx",
+          "importSpec": {
+            "modulePath": "DetailAbout.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicDetailAbout.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "aZ_oilqttiCe",
+          "name": "PriceSection",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicPriceSection.tsx",
+          "importSpec": {
+            "modulePath": "PriceSection.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicPriceSection.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "PoLUkhZ2S45x",
+          "name": "HamburgerIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__Hamburger.tsx"
+        },
+        {
+          "id": "6-tMaSlavLdS",
+          "name": "CheckIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__Check.tsx"
+        },
+        {
+          "id": "Qto3mf0m0vAy",
+          "name": "ChevronRightIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__ChevronRight.tsx"
+        },
+        {
+          "id": "_UjLI5l6sjg-",
+          "name": "CheckSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__CheckSvg.tsx"
+        },
+        {
+          "id": "Difz_oK8bKlb",
+          "name": "FacebookSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__FacebookSvg.tsx"
+        },
+        {
+          "id": "ZkaA7Vbz300b",
+          "name": "TwitterSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__TwitterSvg.tsx"
+        },
+        {
+          "id": "9DF1kZJJ4VwZ",
+          "name": "InstagramSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__InstagramSvg.tsx"
+        },
+        {
+          "id": "6JetCdiuzxoL",
+          "name": "LinkedinSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__LinkedinSvg.tsx"
+        },
+        {
+          "id": "uVrPiJTwk2Jd",
+          "name": "IconArrowRightSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__IconArrowRightSvg.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "HzT3BMlHUMsO",
+          "name": "logo.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/logoPng.png"
+        },
+        {
+          "id": "1bsdBn8GY7LQ",
+          "name": "diagram.svg",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/diagramSvg.svg"
+        },
+        {
+          "id": "C7aSFKxEdhuy",
+          "name": "logo-hero1.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/logoHero1Png.png"
+        },
+        {
+          "id": "YgNdzoH1i3q4",
+          "name": "logo-hero2.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/logoHero2Png.png"
+        },
+        {
+          "id": "6Scyp858R7z3",
+          "name": "logo-hero3.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/logoHero3Png.png"
+        },
+        {
+          "id": "5QTmqtyWQdvs",
+          "name": "logo-hero4.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/logoHero4Png.png"
+        },
+        {
+          "id": "gjPQxVNMuw3j",
+          "name": "terminal.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/terminalPng.png"
+        },
+        {
+          "id": "7BI2hAfsDXdu",
+          "name": "line1.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/line1Png.png"
+        },
+        {
+          "id": "HfeKejHg6ek5",
+          "name": "line-branch.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/lineBranchPng.png"
+        },
+        {
+          "id": "Ht_6CBAPNpvO",
+          "name": "line2.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/line2Png.png"
+        },
+        {
+          "id": "ackZYAcd22iG",
+          "name": "dollar.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/dollarPng.png"
+        },
+        {
+          "id": "4rb_oJOcUICq",
+          "name": "message.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/messagePng.png"
+        },
+        {
+          "id": "J8tFVXSkuM0W",
+          "name": "import.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/importPng.png"
+        },
+        {
+          "id": "Q2kY3h43I6YL",
+          "name": "export.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/exportPng.png"
+        },
+        {
+          "id": "9nbU6WanpGJI",
+          "name": "message2.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/message2Png.png"
+        },
+        {
+          "id": "H5RopTKroDQV",
+          "name": "message3.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/message3Png.png"
+        },
+        {
+          "id": "-NsBf5me7QcQ",
+          "name": "macbook.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/macbookPng.png"
+        },
+        {
+          "id": "pbL2WJRPvqOy",
+          "name": "galleri1-2.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/galleri12Png.png"
+        },
+        {
+          "id": "Ed33N1z1wsog",
+          "name": "galleri2-2.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/galleri22Png.png"
+        },
+        {
+          "id": "8wo9YpNq0k1r",
+          "name": "product-img.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/productImgPng.png"
+        },
+        {
+          "id": "UV4QG6z4jBl1",
+          "name": "backtip.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/backtipPng.png"
+        },
+        {
+          "id": "Q1MruE-XEO7b",
+          "name": "about-ipsum.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/aboutIpsumPng.png"
+        },
+        {
+          "id": "TURKC5Iy4NIK",
+          "name": "about-img.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/aboutImgPng.png"
+        },
+        {
+          "id": "oPayyVx6mz72",
+          "name": "arrow-right.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/arrowRightPng.png"
+        },
+        {
+          "id": "DP_cdgsbcrc8",
+          "name": "checklist.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/checklistPng.png"
+        },
+        {
+          "id": "aJe0pzJwwlMq",
+          "name": "line-pricing.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/linePricingPng.png"
+        },
+        {
+          "id": "INzKCJdp1stM",
+          "name": "checklist-pricing-white.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/checklistPricingWhitePng.png"
+        },
+        {
+          "id": "J9JZf2nrRmVF",
+          "name": "pricing-img.svg",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/pricingImgSvg.svg"
+        },
+        {
+          "id": "Ahr3xW_6g1FF",
+          "name": "diagram-img.svg",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/diagramImgSvg.svg"
+        },
+        {
+          "id": "XOVjwGjRXZft",
+          "name": "ellipse-left.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/ellipseLeftPng.png"
+        },
+        {
+          "id": "qVcI2AEgIj8n",
+          "name": "ellipse-right.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/ellipseRightPng.png"
+        },
+        {
+          "id": "VL4zfjPVE1kp",
+          "name": "arrow-left.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/arrowLeftPng.png"
+        },
+        {
+          "id": "hHEC95hXQmw5",
+          "name": "arrow-right.png 2",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/arrowRightPng2.png"
+        },
+        {
+          "id": "BHETYR3dV2CZ",
+          "name": "galleri1-1.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/galleri11Png.png"
+        },
+        {
+          "id": "PHqF6ZnTaW9i",
+          "name": "galleri2-3.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/galleri23Png.png"
+        },
+        {
+          "id": "2YXCtWhfw_mv",
+          "name": "galleri1-3.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/galleri13Png.png"
+        },
+        {
+          "id": "Rcdn9Sg0GZw9",
+          "name": "galleri2-1.png",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/galleri21Png.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "JF58fU2Bd2Yz",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "24EI35Wdfxrw",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "d2prlt-skvuJ",
+        "name": "Screen",
+        "projectId": "iqYHqr3pWfj21KAZNGZebV",
+        "contextFilePath": "plasmic/blumemail_landing_website_new/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.334",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.334/dist/plasmic.schema.json"
+}
