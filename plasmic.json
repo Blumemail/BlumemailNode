@@ -29,20 +29,6 @@
       "cssFilePath": "plasmic/blumemail_landing_website_new/plasmic.module.css",
       "components": [
         {
-          "id": "2BxzMSVYdCEk",
-          "name": "Homepage",
-          "type": "managed",
-          "projectId": "iqYHqr3pWfj21KAZNGZebV",
-          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicHomepage.tsx",
-          "importSpec": {
-            "modulePath": "../pages/index.tsx"
-          },
-          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicHomepage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/"
-        },
-        {
           "id": "X0bdkv4xmtEE",
           "name": "Navbar",
           "type": "managed",
@@ -172,6 +158,61 @@
           "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicPriceSection.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "2BxzMSVYdCEk",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/"
+        },
+        {
+          "id": "whUPBc-gdmHr",
+          "name": "Alert",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicAlert.tsx",
+          "importSpec": {
+            "modulePath": "Alert.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicAlert.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "dGzqDDBjcd9X",
+          "name": "PrivacyPolicy",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicPrivacyPolicy.tsx",
+          "importSpec": {
+            "modulePath": "../pages/privacy-policy.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicPrivacyPolicy.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/privacy-policy"
+        },
+        {
+          "id": "aI2nTYp-ysx5",
+          "name": "Button2",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicButton2.tsx",
+          "importSpec": {
+            "modulePath": "Button2.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicButton2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
       "icons": [
@@ -219,6 +260,36 @@
           "id": "uVrPiJTwk2Jd",
           "name": "IconArrowRightSvgIcon",
           "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__IconArrowRightSvg.tsx"
+        },
+        {
+          "id": "QFCc2tM66zg3",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "9GP_LLk_tDYV",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "PXprDi05lJam",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "xF7ND7BM750t",
+          "name": "LockAltSvgrepoComSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__LockAltSvgrepoComSvg.tsx"
+        },
+        {
+          "id": "kVGGY4-roWjH",
+          "name": "DataCenterTableManagementSvgrepoComSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__DataCenterTableManagementSvgrepoComSvg.tsx"
+        },
+        {
+          "id": "VPcrDbZqojYk",
+          "name": "HandshakeSvgrepoComSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__HandshakeSvgrepoComSvg.tsx"
         }
       ],
       "images": [
@@ -406,6 +477,31 @@
           "id": "Rcdn9Sg0GZw9",
           "name": "galleri2-1.png",
           "filePath": "../public/plasmic/blumemail_landing_website_new/images/galleri21Png.png"
+        },
+        {
+          "id": "Pk5rmgKxCOhk",
+          "name": "tiffany-tertipes-nxcs8wwj9J0-unsplash.jpg",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/tiffanyTertipesNxcs8Wwj9J0UnsplashJpg.jpg"
+        },
+        {
+          "id": "aDOs2c1aFgzf",
+          "name": "corinne-kutz-tMI2_-r5Nfo-unsplash.jpg",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/corinneKutzTMi2R5NfoUnsplashJpg.jpg"
+        },
+        {
+          "id": "1yULToM1GV-3",
+          "name": "blog01-390x290.jpg 2",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/blog01390X290Jpg2.jpg"
+        },
+        {
+          "id": "ZcdO2U7y0QLH",
+          "name": "blog4-390x290.jpg 2",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/blog4390X290Jpg2.jpg"
+        },
+        {
+          "id": "9-7lzyGVjMUT",
+          "name": "blog-2-390x290.jpg 2",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/blog2390X290Jpg2.jpg"
         }
       ],
       "indirect": false,

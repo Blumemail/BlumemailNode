@@ -60,6 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import Navbar from "../../Navbar"; // plasmic-import: X0bdkv4xmtEE/component
+import Alert from "../../Alert"; // plasmic-import: whUPBc-gdmHr/component
 import Button from "../../Button"; // plasmic-import: IKalveoma9Lb/component
 import Section from "../../Section"; // plasmic-import: ugejia25uuRX/component
 import DiagramCard from "../../DiagramCard"; // plasmic-import: zDHt8RNREuHR/component
@@ -76,6 +77,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: iqYHqr3pWfj21KAZNGZebV/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 2BxzMSVYdCEk/css
 
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: QFCc2tM66zg3/icon
 import IconArrowRightSvgIcon from "./icons/PlasmicIcon__IconArrowRightSvg"; // plasmic-import: uVrPiJTwk2Jd/icon
 
 createPlasmicElementProxy;
@@ -93,6 +95,7 @@ export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   headerHeroSection?: Flex__<"div">;
   navbar?: Flex__<typeof Navbar>;
+  alertInformation?: Flex__<typeof Alert>;
   h1?: Flex__<"h1">;
   diagramSection?: Flex__<typeof Section>;
   deviceSection?: Flex__<typeof Section>;
@@ -199,6 +202,40 @@ function PlasmicHomepage__RenderFunc(props: {
               data-plasmic-name={"navbar"}
               data-plasmic-override={overrides.navbar}
               className={classNames("__wab_instance", sty.navbar)}
+            />
+
+            <Alert
+              data-plasmic-name={"alertInformation"}
+              data-plasmic-override={overrides.alertInformation}
+              body={
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__q1F3Z
+                  )}
+                >
+                  {"Here is the body text description for the alert!"}
+                </div>
+              }
+              className={classNames("__wab_instance", sty.alertInformation)}
+              header={
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__r2Waa
+                  )}
+                >
+                  {"Heads up!"}
+                </div>
+              }
+              icon={
+                <IconIcon
+                  className={classNames(projectcss.all, sty.svg__f5WPi)}
+                  role={"img"}
+                />
+              }
             />
 
             <div className={classNames(projectcss.all, sty.freeBox__av5Pj)}>
@@ -414,110 +451,6 @@ function PlasmicHomepage__RenderFunc(props: {
                     }}
                   />
                 </div>
-              </Stack__>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___9JujL
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "Powering with magnificant of Companies"
-                  : "Powering with magnificant of Companies"}
-              </div>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__hMl5)}
-              >
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__uDHdl)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "170px"
-                      : "100%"
-                  }
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/blumemail_landing_website_new/images/logoHero1Png.png",
-                    fullWidth: 233,
-                    fullHeight: 50,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__h5Mtv)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "170px"
-                      : "100%"
-                  }
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/blumemail_landing_website_new/images/logoHero2Png.png",
-                    fullWidth: 189,
-                    fullHeight: 50,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__fySy)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "170px"
-                      : "100%"
-                  }
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/blumemail_landing_website_new/images/logoHero3Png.png",
-                    fullWidth: 194,
-                    fullHeight: 50,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__pNF)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "170px"
-                      : "100%"
-                  }
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/blumemail_landing_website_new/images/logoHero4Png.png",
-                    fullWidth: 189,
-                    fullHeight: 50,
-                    aspectRatio: undefined
-                  }}
-                />
               </Stack__>
             </div>
           </Stack__>
@@ -1618,6 +1551,7 @@ const PlasmicDescendants = {
     "root",
     "headerHeroSection",
     "navbar",
+    "alertInformation",
     "h1",
     "diagramSection",
     "deviceSection",
@@ -1630,8 +1564,9 @@ const PlasmicDescendants = {
     "pricingSection",
     "footerSection"
   ],
-  headerHeroSection: ["headerHeroSection", "navbar", "h1"],
+  headerHeroSection: ["headerHeroSection", "navbar", "alertInformation", "h1"],
   navbar: ["navbar"],
+  alertInformation: ["alertInformation"],
   h1: ["h1"],
   diagramSection: ["diagramSection"],
   deviceSection: ["deviceSection"],
@@ -1651,6 +1586,7 @@ type NodeDefaultElementType = {
   root: "div";
   headerHeroSection: "div";
   navbar: typeof Navbar;
+  alertInformation: typeof Alert;
   h1: "h1";
   diagramSection: typeof Section;
   deviceSection: typeof Section;
@@ -1726,6 +1662,7 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     headerHeroSection: makeNodeComponent("headerHeroSection"),
     navbar: makeNodeComponent("navbar"),
+    alertInformation: makeNodeComponent("alertInformation"),
     h1: makeNodeComponent("h1"),
     diagramSection: makeNodeComponent("diagramSection"),
     deviceSection: makeNodeComponent("deviceSection"),
