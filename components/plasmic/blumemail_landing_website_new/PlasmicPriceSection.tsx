@@ -65,7 +65,6 @@ import { useScreenVariants as useScreenVariantsd2PrltSkvuJ } from "./PlasmicGlob
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: iqYHqr3pWfj21KAZNGZebV/projectcss
 import sty from "./PlasmicPriceSection.module.css"; // plasmic-import: aZ_oilqttiCe/css
 
@@ -82,6 +81,7 @@ export const PlasmicPriceSection__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicPriceSection__OverridesType = {
   root?: Flex__<"div">;
+  text?: Flex__<"div">;
 };
 
 export interface DefaultPriceSectionProps {
@@ -142,7 +142,6 @@ function PlasmicPriceSection__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
-        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.root
       )}
     >
@@ -158,9 +157,32 @@ function PlasmicPriceSection__RenderFunc(props: {
           />
         </div>
         <div className={classNames(projectcss.all, sty.freeBox__vezY)}>
+          <div className={classNames(projectcss.all, sty.freeBox__pyqEs)}>
+            <div
+              data-plasmic-name={"text"}
+              data-plasmic-override={overrides.text}
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text
+              )}
+            >
+              {"We Recommended"}
+            </div>
+          </div>
           <PriceCard
             borders={["flatCenter"]}
             className={classNames("__wab_instance", sty.priceCard__ju57A)}
+          />
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__xyJ9S)}>
+          <PriceCard
+            borders={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? ["flatRight"]
+                : ["flatRight"]
+            }
+            className={classNames("__wab_instance", sty.priceCard__ffgrB)}
           />
         </div>
       </Stack__>
@@ -169,13 +191,15 @@ function PlasmicPriceSection__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "text"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -238,6 +262,7 @@ export const PlasmicPriceSection = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicPriceSection
     internalVariantProps: PlasmicPriceSection__VariantProps,

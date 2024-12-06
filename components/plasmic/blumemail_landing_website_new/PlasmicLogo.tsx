@@ -61,7 +61,6 @@ import {
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: iqYHqr3pWfj21KAZNGZebV/projectcss
 import sty from "./PlasmicLogo.module.css"; // plasmic-import: uqcHB_pa3qnb/css
 
@@ -171,7 +170,6 @@ function PlasmicLogo__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
-        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.root,
         { [sty.root_50Opaque]: hasVariant($state, "_50Opaque", "_50Opaque") }
       )}
@@ -187,10 +185,10 @@ function PlasmicLogo__RenderFunc(props: {
           [sty.img_50Opaque]: hasVariant($state, "_50Opaque", "_50Opaque"),
           [sty.imgsmallLogo]: hasVariant($state, "smallLogo", "smallLogo")
         })}
-        displayHeight={"109px"}
+        displayHeight={"100%"}
         displayMaxHeight={"none"}
         displayMaxWidth={
-          hasVariant($state, "smallLogo", "smallLogo") ? "50px" : "473px"
+          hasVariant($state, "smallLogo", "smallLogo") ? "50px" : "none"
         }
         displayMinHeight={"0"}
         displayMinWidth={"0"}
@@ -204,10 +202,10 @@ function PlasmicLogo__RenderFunc(props: {
                 aspectRatio: undefined
               }
             : {
-                src: "/plasmic/blumemail_landing_website_new/images/blumemailNewSvg.svg",
-                fullWidth: 250,
-                fullHeight: 156,
-                aspectRatio: 1.602564
+                src: "/plasmic/blumemail_landing_website_new/images/logoPng.png",
+                fullWidth: 224,
+                fullHeight: 50,
+                aspectRatio: undefined
               }
         }
       />

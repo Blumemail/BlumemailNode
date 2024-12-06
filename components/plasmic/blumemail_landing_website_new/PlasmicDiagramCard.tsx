@@ -63,7 +63,6 @@ import { useScreenVariants as useScreenVariantsd2PrltSkvuJ } from "./PlasmicGlob
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: iqYHqr3pWfj21KAZNGZebV/projectcss
 import sty from "./PlasmicDiagramCard.module.css"; // plasmic-import: zDHt8RNREuHR/css
 
@@ -143,7 +142,6 @@ function PlasmicDiagramCard__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
-        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.root
       )}
     >
@@ -164,7 +162,7 @@ function PlasmicDiagramCard__RenderFunc(props: {
         >
           {hasVariant(globalVariants, "screen", "mobileOnly")
             ? "Lorem Ipsum"
-            : "Connect your domain for free."}
+            : "Lorem Ipsum"}
         </h5>
         <div
           data-plasmic-name={"text"}
@@ -177,7 +175,7 @@ function PlasmicDiagramCard__RenderFunc(props: {
         >
           {hasVariant(globalVariants, "screen", "mobileOnly")
             ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed "
-            : "With Blumemail, you can connect your domain for free. So that means you have the option to have that @blumemail.net domain or not. Your choice. \ud83d\ude42"}
+            : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed "}
         </div>
       </div>
     </div>

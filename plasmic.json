@@ -172,171 +172,6 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/"
-        },
-        {
-          "id": "whUPBc-gdmHr",
-          "name": "Alert",
-          "type": "managed",
-          "projectId": "iqYHqr3pWfj21KAZNGZebV",
-          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicAlert.tsx",
-          "importSpec": {
-            "modulePath": "Alert.tsx"
-          },
-          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicAlert.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "dGzqDDBjcd9X",
-          "name": "PrivacyPolicy",
-          "type": "managed",
-          "projectId": "iqYHqr3pWfj21KAZNGZebV",
-          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicPrivacyPolicy.tsx",
-          "importSpec": {
-            "modulePath": "../pages/privacy-policy.tsx"
-          },
-          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicPrivacyPolicy.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/privacy-policy"
-        },
-        {
-          "id": "aI2nTYp-ysx5",
-          "name": "Button2",
-          "type": "managed",
-          "projectId": "iqYHqr3pWfj21KAZNGZebV",
-          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicButton2.tsx",
-          "importSpec": {
-            "modulePath": "Button2.tsx"
-          },
-          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicButton2.module.css",
-          "scheme": "blackbox",
-          "componentType": "component",
-          "plumeType": "button"
-        },
-        {
-          "id": "ZDG0kiEs47Qf",
-          "name": "SignUp",
-          "type": "managed",
-          "projectId": "iqYHqr3pWfj21KAZNGZebV",
-          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicSignUp.tsx",
-          "importSpec": {
-            "modulePath": "../pages/sign-up.tsx"
-          },
-          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicSignUp.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/sign-up"
-        },
-        {
-          "id": "NOrjTyDBFUg5",
-          "name": "TextInput",
-          "type": "managed",
-          "projectId": "iqYHqr3pWfj21KAZNGZebV",
-          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicTextInput.tsx",
-          "importSpec": {
-            "modulePath": "TextInput.tsx"
-          },
-          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicTextInput.module.css",
-          "scheme": "blackbox",
-          "componentType": "component",
-          "plumeType": "text-input"
-        },
-        {
-          "id": "LpAmBeqBLDyE",
-          "name": "Checkbox",
-          "type": "managed",
-          "projectId": "iqYHqr3pWfj21KAZNGZebV",
-          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicCheckbox.tsx",
-          "importSpec": {
-            "modulePath": "Checkbox.tsx"
-          },
-          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicCheckbox.module.css",
-          "scheme": "blackbox",
-          "componentType": "component",
-          "plumeType": "checkbox"
-        },
-        {
-          "id": "h50HF9iyKgoV",
-          "name": "Select",
-          "type": "managed",
-          "projectId": "iqYHqr3pWfj21KAZNGZebV",
-          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect.tsx",
-          "importSpec": {
-            "modulePath": "Select.tsx"
-          },
-          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect.module.css",
-          "scheme": "blackbox",
-          "componentType": "component",
-          "plumeType": "select"
-        },
-        {
-          "id": "IQmfVi47Ej7J",
-          "name": "Select__Option",
-          "type": "managed",
-          "projectId": "iqYHqr3pWfj21KAZNGZebV",
-          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect__Option.tsx",
-          "importSpec": {
-            "modulePath": "Select__Option.tsx"
-          },
-          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect__Option.module.css",
-          "scheme": "blackbox",
-          "componentType": "component",
-          "plumeType": "select-option"
-        },
-        {
-          "id": "WEb60MSSF2m4",
-          "name": "Select__OptionGroup",
-          "type": "managed",
-          "projectId": "iqYHqr3pWfj21KAZNGZebV",
-          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect__OptionGroup.tsx",
-          "importSpec": {
-            "modulePath": "Select__OptionGroup.tsx"
-          },
-          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect__OptionGroup.module.css",
-          "scheme": "blackbox",
-          "componentType": "component",
-          "plumeType": "select-option-group"
-        },
-        {
-          "id": "LE1Bx3-Ekm0U",
-          "name": "Select__Overlay",
-          "type": "managed",
-          "projectId": "iqYHqr3pWfj21KAZNGZebV",
-          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect__Overlay.tsx",
-          "importSpec": {
-            "modulePath": "Select__Overlay.tsx"
-          },
-          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect__Overlay.module.css",
-          "scheme": "blackbox",
-          "componentType": "component",
-          "plumeType": "triggered-overlay"
-        },
-        {
-          "id": "9MuiibfEPZaY",
-          "name": "Section2",
-          "type": "managed",
-          "projectId": "iqYHqr3pWfj21KAZNGZebV",
-          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicSection2.tsx",
-          "importSpec": {
-            "modulePath": "Section2.tsx"
-          },
-          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicSection2.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "RWMrzrBzvLwT",
-          "name": "DetailAbout2",
-          "type": "managed",
-          "projectId": "iqYHqr3pWfj21KAZNGZebV",
-          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicDetailAbout2.tsx",
-          "importSpec": {
-            "modulePath": "DetailAbout2.tsx"
-          },
-          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicDetailAbout2.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
         }
       ],
       "icons": [
@@ -384,76 +219,6 @@
           "id": "uVrPiJTwk2Jd",
           "name": "IconArrowRightSvgIcon",
           "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__IconArrowRightSvg.tsx"
-        },
-        {
-          "id": "QFCc2tM66zg3",
-          "name": "IconIcon",
-          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__Icon.tsx"
-        },
-        {
-          "id": "9GP_LLk_tDYV",
-          "name": "Icon2Icon",
-          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__Icon2.tsx"
-        },
-        {
-          "id": "PXprDi05lJam",
-          "name": "Icon3Icon",
-          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__Icon3.tsx"
-        },
-        {
-          "id": "xF7ND7BM750t",
-          "name": "LockAltSvgrepoComSvgIcon",
-          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__LockAltSvgrepoComSvg.tsx"
-        },
-        {
-          "id": "kVGGY4-roWjH",
-          "name": "DataCenterTableManagementSvgrepoComSvgIcon",
-          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__DataCenterTableManagementSvgrepoComSvg.tsx"
-        },
-        {
-          "id": "VPcrDbZqojYk",
-          "name": "HandshakeSvgrepoComSvgIcon",
-          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__HandshakeSvgrepoComSvg.tsx"
-        },
-        {
-          "id": "TUKQU3OkVnJX",
-          "name": "SearchSvgIcon",
-          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__SearchSvg.tsx"
-        },
-        {
-          "id": "PSTUeM190QNw",
-          "name": "SquareSvgIcon",
-          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__SquareSvg.tsx"
-        },
-        {
-          "id": "XmhKGfoH6ypP",
-          "name": "SquareCheckFilledSvgIcon",
-          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__SquareCheckFilledSvg.tsx"
-        },
-        {
-          "id": "ZWWFAreHoHm8",
-          "name": "SquareMinusSvgIcon",
-          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__SquareMinusSvg.tsx"
-        },
-        {
-          "id": "O8AhCI2vd_Hl",
-          "name": "ChevronDownSvgIcon",
-          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__ChevronDownSvg.tsx"
-        },
-        {
-          "id": "bzxugCVBLot_",
-          "name": "ChevronUpSvgIcon",
-          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__ChevronUpSvg.tsx"
-        },
-        {
-          "id": "nyNM2BBwpAEO",
-          "name": "Icon8Icon",
-          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__Icon8.tsx"
-        },
-        {
-          "id": "Bb4EyUJRmNqj",
-          "name": "Icon38Icon",
-          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__Icon38.tsx"
         }
       ],
       "images": [
@@ -641,75 +406,10 @@
           "id": "Rcdn9Sg0GZw9",
           "name": "galleri2-1.png",
           "filePath": "../public/plasmic/blumemail_landing_website_new/images/galleri21Png.png"
-        },
-        {
-          "id": "Pk5rmgKxCOhk",
-          "name": "tiffany-tertipes-nxcs8wwj9J0-unsplash.jpg",
-          "filePath": "../public/plasmic/blumemail_landing_website_new/images/tiffanyTertipesNxcs8Wwj9J0UnsplashJpg.jpg"
-        },
-        {
-          "id": "aDOs2c1aFgzf",
-          "name": "corinne-kutz-tMI2_-r5Nfo-unsplash.jpg",
-          "filePath": "../public/plasmic/blumemail_landing_website_new/images/corinneKutzTMi2R5NfoUnsplashJpg.jpg"
-        },
-        {
-          "id": "1yULToM1GV-3",
-          "name": "blog01-390x290.jpg 2",
-          "filePath": "../public/plasmic/blumemail_landing_website_new/images/blog01390X290Jpg2.jpg"
-        },
-        {
-          "id": "ZcdO2U7y0QLH",
-          "name": "blog4-390x290.jpg 2",
-          "filePath": "../public/plasmic/blumemail_landing_website_new/images/blog4390X290Jpg2.jpg"
-        },
-        {
-          "id": "9-7lzyGVjMUT",
-          "name": "blog-2-390x290.jpg 2",
-          "filePath": "../public/plasmic/blumemail_landing_website_new/images/blog2390X290Jpg2.jpg"
-        },
-        {
-          "id": "3xn3aKBsW2Pk",
-          "name": "stephen-phillips-hostreviews-co-uk-3Mhgvrk4tjM-unsplash.jpg",
-          "filePath": "../public/plasmic/blumemail_landing_website_new/images/stephenPhillipsHostreviewsCoUk3Mhgvrk4TjMUnsplashJpg.jpg"
-        },
-        {
-          "id": "9ON6tfX6to5K",
-          "name": "green-chameleon-s9CC2SKySJM-unsplash.jpg",
-          "filePath": "../public/plasmic/blumemail_landing_website_new/images/greenChameleonS9Cc2SKySjmUnsplashJpg.jpg"
-        },
-        {
-          "id": "u27rFtDCnOar",
-          "name": "BLUMMEAIL.PNG",
-          "filePath": "../public/plasmic/blumemail_landing_website_new/images/blummeailPng.png"
-        },
-        {
-          "id": "fzU7xehMFG80",
-          "name": "Blumemail New.svg",
-          "filePath": "../public/plasmic/blumemail_landing_website_new/images/blumemailNewSvg.svg"
-        },
-        {
-          "id": "uOHgik04wMjg",
-          "name": "Designer.png",
-          "filePath": "../public/plasmic/blumemail_landing_website_new/images/designerPng.jpg"
-        },
-        {
-          "id": "BTWBFDWeFlx-",
-          "name": "PXL_20220523_025042537.MwwwP2~2.jpg",
-          "filePath": "../public/plasmic/blumemail_landing_website_new/images/pxl20220523025042537MwwwP22Jpg.jpg"
-        },
-        {
-          "id": "edcNiwZ5Pr8S",
-          "name": "PXL_20220523_025042532222227.MP~2.jpg",
-          "filePath": "../public/plasmic/blumemail_landing_website_new/images/pxl20220523025042532222227Mp2Jpg.jpg"
-        },
-        {
-          "id": "Q5LuMNixRMgS",
-          "name": "image 13",
-          "filePath": "../public/plasmic/blumemail_landing_website_new/images/image13.svg"
         }
       ],
       "indirect": false,
-      "globalContextsFilePath": "plasmic/blumemail_landing_website_new/PlasmicGlobalContextsProvider.tsx",
+      "globalContextsFilePath": "",
       "splitsProviderFilePath": "",
       "codeComponents": [
         {
@@ -747,7 +447,8 @@
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "szjgMQpPpxhmkjnaBvZQJG",
@@ -769,7 +470,8 @@
           "componentImportPath": "@plasmicpkgs/react-parallax-tilt"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -1169,7 +871,8 @@
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerBreadcrumb"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

@@ -65,7 +65,6 @@ import { useScreenVariants as useScreenVariantsd2PrltSkvuJ } from "./PlasmicGlob
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: iqYHqr3pWfj21KAZNGZebV/projectcss
 import sty from "./PlasmicPriceCard.module.css"; // plasmic-import: 9tRKoAxzr92y/css
 
@@ -180,7 +179,6 @@ function PlasmicPriceCard__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
-        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.root,
         {
           [sty.rootborders_flatCenter]: hasVariant(
@@ -250,7 +248,7 @@ function PlasmicPriceCard__RenderFunc(props: {
           {hasVariant($state, "borders", "flatRight")
             ? "Enterprise"
             : hasVariant($state, "borders", "flatLeft")
-            ? "Bronze"
+            ? "Free"
             : "Pro"}
         </h4>
         <div
@@ -285,7 +283,7 @@ function PlasmicPriceCard__RenderFunc(props: {
           {hasVariant($state, "borders", "flatRight")
             ? "Flexible power and security"
             : hasVariant($state, "borders", "flatLeft")
-            ? "Inexpensive, but powerful."
+            ? "A complete analytics platform."
             : "A complete analytics platform."}
         </div>
         <PlasmicImg__
@@ -385,7 +383,7 @@ function PlasmicPriceCard__RenderFunc(props: {
               {hasVariant($state, "borders", "flatRight")
                 ? "Everything in pro"
                 : hasVariant($state, "borders", "flatLeft")
-                ? "Perfect for Light emails"
+                ? "1 Product"
                 : "Up to 10 projects"}
             </div>
           </div>
@@ -448,15 +446,7 @@ function PlasmicPriceCard__RenderFunc(props: {
               }
             />
           </div>
-          <div
-            className={classNames(projectcss.all, sty.column__u286R, {
-              [sty.columnborders_flatLeft__u286RoFBp6]: hasVariant(
-                $state,
-                "borders",
-                "flatLeft"
-              )
-            })}
-          >
+          <div className={classNames(projectcss.all, sty.column__u286R)}>
             <div
               className={classNames(
                 projectcss.all,
@@ -489,7 +479,7 @@ function PlasmicPriceCard__RenderFunc(props: {
               {hasVariant($state, "borders", "flatRight")
                 ? "Volume discount"
                 : hasVariant($state, "borders", "flatLeft")
-                ? "Priority Customer Support (email and phone)"
+                ? "Analytics board"
                 : hasVariant($state, "primary", "primary")
                 ? "Analytics board"
                 : "Up to 10 projects"}

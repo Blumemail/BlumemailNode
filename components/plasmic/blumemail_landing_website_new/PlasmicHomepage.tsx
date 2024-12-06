@@ -60,9 +60,12 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import Navbar from "../../Navbar"; // plasmic-import: X0bdkv4xmtEE/component
-import Alert from "../../Alert"; // plasmic-import: whUPBc-gdmHr/component
 import Button from "../../Button"; // plasmic-import: IKalveoma9Lb/component
 import Section from "../../Section"; // plasmic-import: ugejia25uuRX/component
+import DiagramCard from "../../DiagramCard"; // plasmic-import: zDHt8RNREuHR/component
+import ProductCard from "../../ProductCard"; // plasmic-import: 0HkxE5m16msS/component
+import DetailAbout from "../../DetailAbout"; // plasmic-import: nAsFMT_b1Eiv/component
+import PriceSection from "../../PriceSection"; // plasmic-import: aZ_oilqttiCe/component
 import PriceCard from "../../PriceCard"; // plasmic-import: 9tRKoAxzr92y/component
 import FooterSection from "../../FooterSection"; // plasmic-import: pJ7Xt-Q9Heqm/component
 
@@ -70,14 +73,10 @@ import { useScreenVariants as useScreenVariantsd2PrltSkvuJ } from "./PlasmicGlob
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: iqYHqr3pWfj21KAZNGZebV/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 2BxzMSVYdCEk/css
 
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: QFCc2tM66zg3/icon
 import IconArrowRightSvgIcon from "./icons/PlasmicIcon__IconArrowRightSvg"; // plasmic-import: uVrPiJTwk2Jd/icon
-import CheckSvgIcon from "./icons/PlasmicIcon__CheckSvg"; // plasmic-import: _UjLI5l6sjg-/icon
-import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: Bb4EyUJRmNqj/icon
 
 createPlasmicElementProxy;
 
@@ -94,13 +93,16 @@ export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   headerHeroSection?: Flex__<"div">;
   navbar?: Flex__<typeof Navbar>;
-  alertInformation?: Flex__<typeof Alert>;
   h1?: Flex__<"h1">;
+  diagramSection?: Flex__<typeof Section>;
   deviceSection?: Flex__<typeof Section>;
-  deviceSection2?: Flex__<typeof Section>;
+  gallerySection?: Flex__<typeof Section>;
+  productSection?: Flex__<typeof Section>;
+  aboutSection?: Flex__<typeof Section>;
+  priceSection?: Flex__<typeof PriceSection>;
+  startSection?: Flex__<typeof Section>;
+  h3?: Flex__<"h3">;
   pricingSection?: Flex__<typeof Section>;
-  background2?: Flex__<"div">;
-  copy?: Flex__<"div">;
   footerSection?: Flex__<typeof FooterSection>;
 };
 
@@ -183,7 +185,6 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
-            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -198,40 +199,6 @@ function PlasmicHomepage__RenderFunc(props: {
               data-plasmic-name={"navbar"}
               data-plasmic-override={overrides.navbar}
               className={classNames("__wab_instance", sty.navbar)}
-            />
-
-            <Alert
-              data-plasmic-name={"alertInformation"}
-              data-plasmic-override={overrides.alertInformation}
-              body={
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__q1F3Z
-                  )}
-                >
-                  {"Here is the body text description for the alert!"}
-                </div>
-              }
-              className={classNames("__wab_instance", sty.alertInformation)}
-              header={
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__r2Waa
-                  )}
-                >
-                  {"Heads up!"}
-                </div>
-              }
-              icon={
-                <IconIcon
-                  className={classNames(projectcss.all, sty.svg__f5WPi)}
-                  role={"img"}
-                />
-              }
             />
 
             <div className={classNames(projectcss.all, sty.freeBox__av5Pj)}>
@@ -253,7 +220,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "Analytics for developers can be better"
-                      : "The Premier Email Service."}
+                      : "Analytics for \ndevelopers can\nbe better"}
                   </h1>
                   <div
                     className={classNames(
@@ -264,7 +231,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                      : "Blumemail is the premier email service for everybody. We\u2019re talking business, yourself, projects or honestly anything."}
+                      : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
                   </div>
                   <Stack__
                     as={"div"}
@@ -312,7 +279,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       >
                         {hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "Try Demo For Free"
-                          : "Get Blumemail"}
+                          : "Try Demo For Free"}
                       </div>
                     </Button>
                     <Button
@@ -349,7 +316,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       >
                         {hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "Learn More"
-                          : "Log into Webmail"}
+                          : "Learn More"}
                       </div>
                     </Button>
                   </Stack__>
@@ -440,20 +407,124 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/blumemail_landing_website_new/images/blummeailPng.png",
-                      fullWidth: 904,
-                      fullHeight: 618,
-                      aspectRatio: undefined
+                      src: "/plasmic/blumemail_landing_website_new/images/diagramSvg.svg",
+                      fullWidth: 173,
+                      fullHeight: 150,
+                      aspectRatio: 1.151631
                     }}
                   />
                 </div>
+              </Stack__>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___9JujL
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "Powering with magnificant of Companies"
+                  : "Powering with magnificant of Companies"}
+              </div>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__hMl5)}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__uDHdl)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "170px"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blumemail_landing_website_new/images/logoHero1Png.png",
+                    fullWidth: 233,
+                    fullHeight: 50,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__h5Mtv)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "170px"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blumemail_landing_website_new/images/logoHero2Png.png",
+                    fullWidth: 189,
+                    fullHeight: 50,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__fySy)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "170px"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blumemail_landing_website_new/images/logoHero3Png.png",
+                    fullWidth: 194,
+                    fullHeight: 50,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__pNF)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "170px"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blumemail_landing_website_new/images/logoHero4Png.png",
+                    fullWidth: 189,
+                    fullHeight: 50,
+                    aspectRatio: undefined
+                  }}
+                />
               </Stack__>
             </div>
           </Stack__>
           <PlasmicImg__
             alt={""}
             className={classNames(sty.img__pcyUt)}
-            displayHeight={"608px"}
+            displayHeight={"auto"}
             displayMaxHeight={"none"}
             displayMaxWidth={"100%"}
             displayMinHeight={"0"}
@@ -505,6 +576,372 @@ function PlasmicHomepage__RenderFunc(props: {
           />
 
           <Section
+            data-plasmic-name={"diagramSection"}
+            data-plasmic-override={overrides.diagramSection}
+            className={classNames("__wab_instance", sty.diagramSection)}
+            size={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? "mobile"
+                : undefined
+            }
+          >
+            <div className={classNames(projectcss.all, sty.freeBox__dPgGz)}>
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__uiCYa
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "Lorem ipsum dolor \nsit amet"
+                  : "Lorem ipsum dolor \nsit amet"}
+              </h2>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__hSrqD
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+              </div>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__drVVk)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "249px"
+                    : "100%"
+                }
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/blumemail_landing_website_new/images/terminalPng.png",
+                  fullWidth: 624,
+                  fullHeight: 333,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__dp8V0)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "auto"
+                    : "auto"
+                }
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/blumemail_landing_website_new/images/line1Png.png",
+                  fullWidth: 11,
+                  fullHeight: 150,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__jdZ26)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "50px"
+                    : "100%"
+                }
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/blumemail_landing_website_new/images/lineBranchPng.png",
+                  fullWidth: 100,
+                  fullHeight: 100,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__ukQbN)}
+                displayHeight={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "auto"
+                    : "auto"
+                }
+                displayMaxHeight={"none"}
+                displayMaxWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "500px"
+                    : "770px"
+                }
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "auto"
+                    : "auto"
+                }
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/blumemail_landing_website_new/images/line2Png.png",
+                  fullWidth: 844,
+                  fullHeight: 284,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___80YM)}
+              >
+                <DiagramCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.diagramCard___2GYn8
+                  )}
+                />
+
+                <DiagramCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.diagramCard___7YZxT
+                  )}
+                />
+
+                <DiagramCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.diagramCard__rpK0
+                  )}
+                />
+              </Stack__>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__guk0L)}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__gjhmK)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "72px"
+                      : "none"
+                  }
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "72px"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blumemail_landing_website_new/images/dollarPng.png",
+                    fullWidth: 100,
+                    fullHeight: 100,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img___5XXrW)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "72px"
+                      : "none"
+                  }
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "72px"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blumemail_landing_website_new/images/messagePng.png",
+                    fullWidth: 100,
+                    fullHeight: 100,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__z2Ted)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "72px"
+                      : "none"
+                  }
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "72px"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blumemail_landing_website_new/images/importPng.png",
+                    fullWidth: 100,
+                    fullHeight: 100,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__mxz6F)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "72px"
+                      : "none"
+                  }
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "72px"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blumemail_landing_website_new/images/lineBranchPng.png",
+                    fullWidth: 100,
+                    fullHeight: 100,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__k8Fyl)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "72px"
+                      : "none"
+                  }
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "72px"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blumemail_landing_website_new/images/exportPng.png",
+                    fullWidth: 100,
+                    fullHeight: 100,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__bbU2A)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "72px"
+                      : "none"
+                  }
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "72px"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blumemail_landing_website_new/images/message2Png.png",
+                    fullWidth: 100,
+                    fullHeight: 100,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__l2WpO)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "72px"
+                      : "none"
+                  }
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "72px"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blumemail_landing_website_new/images/message3Png.png",
+                    fullWidth: 100,
+                    fullHeight: 100,
+                    aspectRatio: undefined
+                  }}
+                />
+              </Stack__>
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2___3Kcvt
+                )}
+              >
+                {"Lorem ipsum dolor \nsit amet"}
+              </h2>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___7464S
+                )}
+              >
+                {
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                }
+              </div>
+            </div>
+          </Section>
+          <Section
             data-plasmic-name={"deviceSection"}
             data-plasmic-override={overrides.deviceSection}
             background={"dark"}
@@ -524,7 +961,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h2__zEsmN
                 )}
               >
-                {"Connect Blumemail with any Email Client."}
+                {"Lorem ipsum dolor sit amet"}
               </h2>
               <div
                 className={classNames(
@@ -535,42 +972,576 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 {hasVariant(globalVariants, "screen", "mobileOnly")
                   ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua."
-                  : "Blumemail already works with most email clients such as: Microsoft Outlook, Mozilla Thunderbird, Apple Mail, Notion Mail and more just to name a few."}
+                  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua."}
+              </div>
+            </div>
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__aRbBl)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "360px"
+                  : "100%"
+              }
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"auto"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/blumemail_landing_website_new/images/macbookPng.png",
+                fullWidth: 900,
+                fullHeight: 565,
+                aspectRatio: undefined
+              }}
+            />
+          </Section>
+          <Section
+            data-plasmic-name={"gallerySection"}
+            data-plasmic-override={overrides.gallerySection}
+            className={classNames("__wab_instance", sty.gallerySection)}
+            size={"fullContentGallery"}
+          >
+            <div className={classNames(projectcss.all, sty.freeBox__huRss)}>
+              <div className={classNames(projectcss.all, sty.columns__lCOoN)}>
+                <div className={classNames(projectcss.all, sty.column__sOjN)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__ytE)}
+                    displayHeight={"100%"}
+                    displayMaxHeight={"300px"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/blumemail_landing_website_new/images/galleri11Png.png",
+                      fullWidth: 700,
+                      fullHeight: 300,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.column__w441)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img___2IlwC)}
+                    displayHeight={"100%"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/blumemail_landing_website_new/images/galleri12Png.png",
+                      fullWidth: 700,
+                      fullHeight: 300,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.column__uCjNr)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__bfdWi)}
+                    displayHeight={"100%"}
+                    displayMaxHeight={"300px"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/blumemail_landing_website_new/images/galleri13Png.png",
+                      fullWidth: 700,
+                      fullHeight: 300,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.columns__vx1Ek)}>
+                <div className={classNames(projectcss.all, sty.column__wBWsv)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__apOcz)}
+                    displayHeight={"100%"}
+                    displayMaxHeight={"300px"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/blumemail_landing_website_new/images/galleri21Png.png",
+                      fullWidth: 700,
+                      fullHeight: 300,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.column__l17H2)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__fZiTf)}
+                    displayHeight={"100%"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/blumemail_landing_website_new/images/galleri22Png.png",
+                      fullWidth: 700,
+                      fullHeight: 300,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.column__hpN7)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__rYDgA)}
+                    displayHeight={"100%"}
+                    displayMaxHeight={"300px"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/blumemail_landing_website_new/images/galleri23Png.png",
+                      fullWidth: 700,
+                      fullHeight: 300,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
               </div>
             </div>
           </Section>
           <Section
-            data-plasmic-name={"deviceSection2"}
-            data-plasmic-override={overrides.deviceSection2}
-            background={"dark"}
-            className={classNames("__wab_instance", sty.deviceSection2)}
+            data-plasmic-name={"productSection"}
+            data-plasmic-override={overrides.productSection}
+            className={classNames("__wab_instance", sty.productSection)}
             size={
               hasVariant(globalVariants, "screen", "mobileOnly")
                 ? "mobile"
                 : undefined
             }
           >
-            <h2
-              className={classNames(
-                projectcss.all,
-                projectcss.h2,
-                projectcss.__wab_text,
-                sty.h2__vUtoT
-              )}
-            >
-              {"Blumemail has a ton of features."}
-            </h2>
-            <div className={classNames(projectcss.all, sty.freeBox___2D371)}>
+            <div className={classNames(projectcss.all, sty.freeBox__r9OTr)}>
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__gir5A
+                )}
+              >
+                {"Lorem ipsum dolor sit amet"}
+              </h2>
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__lxazG
+                  sty.text__o3ZQ7
+                )}
+              >
+                {
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua."
+                }
+              </div>
+              <Button
+                className={classNames("__wab_instance", sty.button__b7Uuh)}
+                color={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "blue"
+                    : "blue"
+                }
+                endIcon={
+                  <svg
+                    className={classNames(projectcss.all, sty.svg__c0Oy9)}
+                    role={"img"}
+                  />
+                }
+                link={"#"}
+                startIcon={
+                  <svg
+                    className={classNames(projectcss.all, sty.svg__doIoo)}
+                    role={"img"}
+                  />
+                }
+                submitsForm={true}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___5AS3L
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "Get Started"
+                    : "Get Started"}
+                </div>
+              </Button>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___5RTP)}
+              >
+                <ProductCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.productCard__ceLz
+                  )}
+                />
+
+                <ProductCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.productCard__ss2A
+                  )}
+                />
+              </Stack__>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___3ZhH2)}
+              >
+                <ProductCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.productCard__iHryi
+                  )}
+                />
+
+                <ProductCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.productCard___25Mmc
+                  )}
+                />
+              </Stack__>
+            </div>
+          </Section>
+          <Section
+            data-plasmic-name={"aboutSection"}
+            data-plasmic-override={overrides.aboutSection}
+            background={"dark"}
+            className={classNames("__wab_instance", sty.aboutSection)}
+            size={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? "mobile"
+                : undefined
+            }
+          >
+            <div className={classNames(projectcss.all, sty.freeBox___6B3O0)}>
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__bj7D8
                 )}
               >
                 {hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua."
-                  : " end-to-end-encryption, customer support, auto-burn, and free domain linking.\nis the reason why Blumemail is the better choice."}
+                  ? "What people say \nabout us"
+                  : "What people say about us"}
+              </h2>
+              <div className={classNames(projectcss.all, sty.freeBox__mcKGs)}>
+                <div className={classNames(projectcss.all, sty.freeBox__xSdo)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__kxrfr)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "339px"
+                        : "100%"
+                    }
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/blumemail_landing_website_new/images/aboutImgPng.png",
+                      fullWidth: 400,
+                      fullHeight: 500,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___7AdmB)}
+                >
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__u46BZ
+                    )}
+                  >
+                    {"Michael Justin"}
+                  </h2>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__z5AbB)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__xdaCc)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/blumemail_landing_website_new/images/aboutIpsumPng.png",
+                        fullWidth: 152,
+                        fullHeight: 40,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__dv9SN
+                      )}
+                    >
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "CEO Company"
+                        : "CEO Company"}
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__javQ)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__bvTw2)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "auto"
+                          : "auto"
+                      }
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/blumemail_landing_website_new/images/backtipPng.png",
+                        fullWidth: 34,
+                        fullHeight: 32,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___3IaW7
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                      : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+                  </div>
+                </div>
+              </div>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___3Ah4U)}
+              >
+                <DetailAbout
+                  className={classNames(
+                    "__wab_instance",
+                    sty.detailAbout__qnLhy
+                  )}
+                />
+
+                <DetailAbout
+                  className={classNames(
+                    "__wab_instance",
+                    sty.detailAbout__iYyIs
+                  )}
+                />
+
+                <DetailAbout
+                  className={classNames(
+                    "__wab_instance",
+                    sty.detailAbout__cKpQa
+                  )}
+                />
+              </Stack__>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__oeBU)}
+              >
+                <DetailAbout
+                  className={classNames(
+                    "__wab_instance",
+                    sty.detailAbout__eoR0W
+                  )}
+                />
+
+                <DetailAbout
+                  className={classNames(
+                    "__wab_instance",
+                    sty.detailAbout__jZvMu
+                  )}
+                />
+
+                <DetailAbout
+                  className={classNames(
+                    "__wab_instance",
+                    sty.detailAbout__hiyiG
+                  )}
+                />
+              </Stack__>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__kLToH)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/blumemail_landing_website_new/images/arrowLeftPng.png",
+                  fullWidth: 24,
+                  fullHeight: 24,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__iIsmk)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/blumemail_landing_website_new/images/arrowRightPng2.png",
+                  fullWidth: 24,
+                  fullHeight: 24,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
+          </Section>
+          <PriceSection
+            data-plasmic-name={"priceSection"}
+            data-plasmic-override={overrides.priceSection}
+            className={classNames("__wab_instance", sty.priceSection)}
+          />
+
+          <Section
+            data-plasmic-name={"startSection"}
+            data-plasmic-override={overrides.startSection}
+            className={classNames("__wab_instance", sty.startSection)}
+            size={"fullContentWidth"}
+          >
+            <div className={classNames(projectcss.all, sty.freeBox__cEoiV)}>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__wgaB6)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/blumemail_landing_website_new/images/pricingImgSvg.svg",
+                  fullWidth: 300,
+                  fullHeight: 67,
+                  aspectRatio: 4.468401
+                }}
+              />
+
+              <div className={classNames(projectcss.all, sty.columns___2VUoU)}>
+                <div className={classNames(projectcss.all, sty.column__oieE7)}>
+                  <h3
+                    data-plasmic-name={"h3"}
+                    data-plasmic-override={overrides.h3}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h3,
+                      projectcss.__wab_text,
+                      sty.h3
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "Start using our product today"
+                      : "Start using our product today"}
+                  </h3>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__rl5G
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "Faster than free analytics tools. Access to all your data, with respect to the privacy of your users."
+                      : "Faster than free analytics tools. Access to all your data, with respect to the privacy of your users."}
+                  </div>
+                </div>
+                <div className={classNames(projectcss.all, sty.column__opw2U)}>
+                  <Button
+                    className={classNames("__wab_instance", sty.button__kDxYd)}
+                    color={"white"}
+                    endIcon={
+                      <svg
+                        className={classNames(projectcss.all, sty.svg__vpkeV)}
+                        role={"img"}
+                      />
+                    }
+                    link={"#"}
+                    startIcon={
+                      <svg
+                        className={classNames(projectcss.all, sty.svg__jcdvQ)}
+                        role={"img"}
+                      />
+                    }
+                    submitsForm={true}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__nW4Um
+                      )}
+                    >
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "Get Started"
+                        : "Get Started"}
+                    </div>
+                  </Button>
+                </div>
               </div>
             </div>
           </Section>
@@ -631,131 +1602,6 @@ function PlasmicHomepage__RenderFunc(props: {
               </Stack__>
             </div>
           </Section>
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__hfGyj)}
-          >
-            <div className={classNames(projectcss.all, sty.columns__lHuDs)}>
-              <div className={classNames(projectcss.all, sty.column___36UNk)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__sMdt4)}
-                  displayHeight={"100%"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"320px"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  src={{
-                    src: "/plasmic/blumemail_landing_website_new/images/designerPng.jpg",
-                    fullWidth: 1024,
-                    fullHeight: 1024,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <div
-                  data-plasmic-name={"background2"}
-                  data-plasmic-override={overrides.background2}
-                  className={classNames(projectcss.all, sty.background2)}
-                />
-              </div>
-              <div className={classNames(projectcss.all, sty.column___3IRrI)}>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__qCcXq)}
-                >
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"copy"}
-                    data-plasmic-override={overrides.copy}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.copy)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__ujY71)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__eGjud
-                        )}
-                      >
-                        {""}
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__x42SR
-                        )}
-                      >
-                        {"Join us."}
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__d08R
-                        )}
-                      >
-                        {
-                          "If you were thinking about getting Blumemail, it has never been a better time to do so. Blumemail is basically a better email service."
-                        }
-                      </div>
-                    </Stack__>
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__uoLJj)}
-                    >
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__vCv1
-                        )}
-                        color={"blue"}
-                        endIcon={
-                          <Icon38Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__iAxPw
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        startIcon={
-                          <CheckSvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__oa9Se
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        submitsForm={true}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__dj20C
-                          )}
-                        >
-                          {"Get Blumemail"}
-                        </div>
-                      </Button>
-                    </Stack__>
-                  </Stack__>
-                </Stack__>
-              </div>
-            </div>
-          </Stack__>
           <FooterSection
             data-plasmic-name={"footerSection"}
             data-plasmic-override={overrides.footerSection}
@@ -772,24 +1618,30 @@ const PlasmicDescendants = {
     "root",
     "headerHeroSection",
     "navbar",
-    "alertInformation",
     "h1",
+    "diagramSection",
     "deviceSection",
-    "deviceSection2",
+    "gallerySection",
+    "productSection",
+    "aboutSection",
+    "priceSection",
+    "startSection",
+    "h3",
     "pricingSection",
-    "background2",
-    "copy",
     "footerSection"
   ],
-  headerHeroSection: ["headerHeroSection", "navbar", "alertInformation", "h1"],
+  headerHeroSection: ["headerHeroSection", "navbar", "h1"],
   navbar: ["navbar"],
-  alertInformation: ["alertInformation"],
   h1: ["h1"],
+  diagramSection: ["diagramSection"],
   deviceSection: ["deviceSection"],
-  deviceSection2: ["deviceSection2"],
+  gallerySection: ["gallerySection"],
+  productSection: ["productSection"],
+  aboutSection: ["aboutSection"],
+  priceSection: ["priceSection"],
+  startSection: ["startSection", "h3"],
+  h3: ["h3"],
   pricingSection: ["pricingSection"],
-  background2: ["background2"],
-  copy: ["copy"],
   footerSection: ["footerSection"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -799,13 +1651,16 @@ type NodeDefaultElementType = {
   root: "div";
   headerHeroSection: "div";
   navbar: typeof Navbar;
-  alertInformation: typeof Alert;
   h1: "h1";
+  diagramSection: typeof Section;
   deviceSection: typeof Section;
-  deviceSection2: typeof Section;
+  gallerySection: typeof Section;
+  productSection: typeof Section;
+  aboutSection: typeof Section;
+  priceSection: typeof PriceSection;
+  startSection: typeof Section;
+  h3: "h3";
   pricingSection: typeof Section;
-  background2: "div";
-  copy: "div";
   footerSection: typeof FooterSection;
 };
 
@@ -871,13 +1726,16 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     headerHeroSection: makeNodeComponent("headerHeroSection"),
     navbar: makeNodeComponent("navbar"),
-    alertInformation: makeNodeComponent("alertInformation"),
     h1: makeNodeComponent("h1"),
+    diagramSection: makeNodeComponent("diagramSection"),
     deviceSection: makeNodeComponent("deviceSection"),
-    deviceSection2: makeNodeComponent("deviceSection2"),
+    gallerySection: makeNodeComponent("gallerySection"),
+    productSection: makeNodeComponent("productSection"),
+    aboutSection: makeNodeComponent("aboutSection"),
+    priceSection: makeNodeComponent("priceSection"),
+    startSection: makeNodeComponent("startSection"),
+    h3: makeNodeComponent("h3"),
     pricingSection: makeNodeComponent("pricingSection"),
-    background2: makeNodeComponent("background2"),
-    copy: makeNodeComponent("copy"),
     footerSection: makeNodeComponent("footerSection"),
 
     // Metadata about props expected for PlasmicHomepage
