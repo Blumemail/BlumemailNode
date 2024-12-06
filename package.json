@@ -12,6 +12,9 @@
     "@plasmicapp/cli": "^0.1.334",
     "@plasmicapp/loader-nextjs": "^1.0.407",
     "@plasmicapp/react-web": "^0.2.355",
+    "@plasmicpkgs/antd5": "^0.0.256",
+    "@plasmicpkgs/react-awesome-reveal": "^3.8.209",
+    "@plasmicpkgs/react-parallax-tilt": "^0.0.207",
     "next": "14.2.20",
     "react": "^18",
     "react-dom": "^18"

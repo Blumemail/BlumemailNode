@@ -1,11 +1,11 @@
 .root {
+  position: relative;
+  width: auto;
+  height: auto;
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  position: relative;
-  width: auto;
-  height: auto;
   padding: 64px;
 }
 @media (min-width: 0px) and (max-width: 930px) {
@@ -31,7 +31,6 @@
   padding-right: 18px;
 }
 .freeBox {
-  max-width: var(--token-YACFr4-QuT_i);
   display: flex;
   position: relative;
   flex-direction: column;
@@ -40,7 +39,7 @@
   width: 100%;
   height: auto;
   background: none;
-  margin-bottom: 0px;
+  max-width: var(--token-YACFr4-QuT_i);
   min-width: 0;
   padding: 8px;
 }

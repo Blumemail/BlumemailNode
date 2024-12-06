@@ -159,6 +159,9 @@
   position: relative;
   object-fit: cover;
 }
+.text__lTg7 {
+  padding-left: 0px;
+}
 .svg__lwPkU {
   width: 24px;
   height: 24px;
@@ -197,6 +200,9 @@
 }
 .button__u2Zs9:global(.__wab_instance) {
   position: relative;
+  max-width: 123px;
+  width: 100%;
+  min-width: 0;
 }
 .svg__sCkwW {
   width: 24px;
@@ -235,12 +241,22 @@
 .button__uuyEk:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+  width: 188px;
+  margin-bottom: 0px;
+  flex-shrink: 0;
 }
 .svg__iEpK {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
+}
+.text__nzmdM {
+  margin-right: 32px;
+  max-width: 120px;
+  width: 100%;
+  padding-right: 0px;
+  min-width: 0;
 }
 .svg__qTl5A {
   width: 24px;

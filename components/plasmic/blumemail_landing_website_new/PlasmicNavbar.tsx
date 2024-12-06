@@ -66,6 +66,7 @@ import { useScreenVariants as useScreenVariantsd2PrltSkvuJ } from "./PlasmicGlob
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: iqYHqr3pWfj21KAZNGZebV/projectcss
 import sty from "./PlasmicNavbar.module.css"; // plasmic-import: X0bdkv4xmtEE/css
 
@@ -145,6 +146,7 @@ function PlasmicNavbar__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.root
       )}
     >
@@ -187,7 +189,15 @@ function PlasmicNavbar__RenderFunc(props: {
             }
             submitsForm={true}
           >
-            {"Product"}
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__lTg7
+              )}
+            >
+              {"Donate"}
+            </div>
           </Button>
           <Button
             className={classNames("__wab_instance", sty.button__hbxcu)}
@@ -207,7 +217,7 @@ function PlasmicNavbar__RenderFunc(props: {
             }
             submitsForm={true}
           >
-            {"Purchase"}
+            {"Get Blumemail"}
           </Button>
           <Button
             className={classNames("__wab_instance", sty.button__rdTtg)}
@@ -227,7 +237,7 @@ function PlasmicNavbar__RenderFunc(props: {
             }
             submitsForm={true}
           >
-            {"How it Work"}
+            {"Meet The Founder"}
           </Button>
           <Button
             className={classNames("__wab_instance", sty.button__u2Zs9)}
@@ -269,7 +279,7 @@ function PlasmicNavbar__RenderFunc(props: {
             }
             submitsForm={true}
           >
-            {"Log in"}
+            {"Sign up"}
           </Button>
           <Button
             className={classNames("__wab_instance", sty.button__uuyEk)}
@@ -289,7 +299,15 @@ function PlasmicNavbar__RenderFunc(props: {
             }
             submitsForm={true}
           >
-            {"Sign Up"}
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__nzmdM
+              )}
+            >
+              {"Login to Webmail"}
+            </div>
           </Button>
         </div>
       </Stack__>

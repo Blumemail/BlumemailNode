@@ -70,18 +70,19 @@ import Navbar from "../../Navbar"; // plasmic-import: X0bdkv4xmtEE/component
 import TextInput from "../../TextInput"; // plasmic-import: NOrjTyDBFUg5/component
 import Select from "../../Select"; // plasmic-import: h50HF9iyKgoV/component
 import Checkbox from "../../Checkbox"; // plasmic-import: LpAmBeqBLDyE/component
+import FooterSection from "../../FooterSection"; // plasmic-import: pJ7Xt-Q9Heqm/component
 
 import { useScreenVariants as useScreenVariantsd2PrltSkvuJ } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: d2prlt-skvuJ/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: iqYHqr3pWfj21KAZNGZebV/projectcss
 import sty from "./PlasmicSignUp.module.css"; // plasmic-import: ZDG0kiEs47Qf/css
 
 import SearchSvgIcon from "./icons/PlasmicIcon__SearchSvg"; // plasmic-import: TUKQU3OkVnJX/icon
 import CheckSvgIcon from "./icons/PlasmicIcon__CheckSvg"; // plasmic-import: _UjLI5l6sjg-/icon
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: PXprDi05lJam/icon
-import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: 9GP_LLk_tDYV/icon
 
 createPlasmicElementProxy;
 
@@ -100,6 +101,7 @@ export type PlasmicSignUp__OverridesType = {
   pageBanner?: Flex__<"div">;
   navbar?: Flex__<typeof Navbar>;
   h1?: Flex__<"h1">;
+  img?: Flex__<typeof PlasmicImg__>;
   mainSection2?: Flex__<"div">;
   container4?: Flex__<"div">;
   h2?: Flex__<"h2">;
@@ -108,10 +110,7 @@ export type PlasmicSignUp__OverridesType = {
   select?: Flex__<typeof Select>;
   textInput3?: Flex__<typeof TextInput>;
   checkbox?: Flex__<typeof Checkbox>;
-  footerTop?: Flex__<"div">;
-  container?: Flex__<"div">;
-  footerBottom?: Flex__<"div">;
-  container2?: Flex__<"div">;
+  footerSection?: Flex__<typeof FooterSection>;
 };
 
 export interface DefaultSignUpProps {}
@@ -226,6 +225,7 @@ function PlasmicSignUp__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -288,8 +288,10 @@ function PlasmicSignUp__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.column__dzFdM)}
                   >
                     <PlasmicImg__
+                      data-plasmic-name={"img"}
+                      data-plasmic-override={overrides.img}
                       alt={""}
-                      className={classNames(sty.img__x3Q2P)}
+                      className={classNames(sty.img)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={
@@ -684,325 +686,11 @@ function PlasmicSignUp__RenderFunc(props: {
                 </div>
               </div>
             </div>
-          </div>
-          <div className={classNames(projectcss.all, sty.freeBox___5UPk)}>
-            <div
-              data-plasmic-name={"footerTop"}
-              data-plasmic-override={overrides.footerTop}
-              className={classNames(projectcss.all, sty.footerTop)}
-            >
-              <div
-                data-plasmic-name={"container"}
-                data-plasmic-override={overrides.container}
-                className={classNames(projectcss.all, sty.container)}
-              >
-                <div className={classNames(projectcss.all, sty.columns__fElmU)}>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.column__jF9Tz)}
-                  >
-                    <Icon2Icon
-                      className={classNames(projectcss.all, sty.svg__b1S37)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__idGZ
-                      )}
-                    >
-                      {
-                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                      }
-                    </div>
-                  </Stack__>
-                  <div
-                    className={classNames(projectcss.all, sty.column___0SYsI)}
-                  >
-                    <h5
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h5,
-                        projectcss.__wab_text,
-                        sty.h5__gIjG
-                      )}
-                    >
-                      {"Menu"}
-                    </h5>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link___3HhCl
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {"Privacy Policy"}
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__ibXbn
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {"Terms of Service"}
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__sccM
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {"Pricing "}
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__hm4N1
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {"Contact"}
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__j0JOw
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {"Blog"}
-                    </PlasmicLink__>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__u9Nu5)}
-                  >
-                    <h5
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h5,
-                        projectcss.__wab_text,
-                        sty.h5__dnPFn
-                      )}
-                    >
-                      {"Gallery"}
-                    </h5>
-                    <div
-                      className={classNames(projectcss.all, sty.columns__mDq8U)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__wG4Up
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__po8He)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/blumemail_landing_website_new/images/blog01390X290Jpg2.jpg",
-                            fullWidth: 390,
-                            fullHeight: 290,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__gJlRo
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__hsO6S)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/blumemail_landing_website_new/images/blog4390X290Jpg2.jpg",
-                            fullWidth: 390,
-                            fullHeight: 290,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column___4KYfS
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__wtuqG)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/blumemail_landing_website_new/images/blog2390X290Jpg2.jpg",
-                            fullWidth: 390,
-                            fullHeight: 290,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.columns__eAx9S)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__liGZw
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img___8Gfi3)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/blumemail_landing_website_new/images/blog01390X290Jpg2.jpg",
-                            fullWidth: 390,
-                            fullHeight: 290,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__cqbUh
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__v4Qb8)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/blumemail_landing_website_new/images/blog4390X290Jpg2.jpg",
-                            fullWidth: 390,
-                            fullHeight: 290,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                      <div
-                        className={classNames(projectcss.all, sty.column__hvTF)}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__xMu74)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/blumemail_landing_website_new/images/blog2390X290Jpg2.jpg",
-                            fullWidth: 390,
-                            fullHeight: 290,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              data-plasmic-name={"footerBottom"}
-              data-plasmic-override={overrides.footerBottom}
-              className={classNames(projectcss.all, sty.footerBottom)}
-            >
-              <div
-                data-plasmic-name={"container2"}
-                data-plasmic-override={overrides.container2}
-                className={classNames(projectcss.all, sty.container2)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__xY19B
-                  )}
-                >
-                  <React.Fragment>
-                    <React.Fragment>
-                      {
-                        "\u00a9 Company Name. All rights reserved. This site proudly built with "
-                      }
-                    </React.Fragment>
-                    {
-                      <PlasmicLink__
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          projectcss.plasmic_default__inline,
-                          sty.link__fFc2M
-                        )}
-                        component={Link}
-                        href={"https://www.plasmic.app/"}
-                        platform={"nextjs"}
-                      >
-                        {"Plasmic"}
-                      </PlasmicLink__>
-                    }
-                    <React.Fragment>{"."}</React.Fragment>
-                  </React.Fragment>
-                </div>
-              </div>
-            </div>
+            <FooterSection
+              data-plasmic-name={"footerSection"}
+              data-plasmic-override={overrides.footerSection}
+              className={classNames("__wab_instance", sty.footerSection)}
+            />
           </div>
         </Stack__>
       </div>
@@ -1017,6 +705,7 @@ const PlasmicDescendants = {
     "pageBanner",
     "navbar",
     "h1",
+    "img",
     "mainSection2",
     "container4",
     "h2",
@@ -1025,16 +714,14 @@ const PlasmicDescendants = {
     "select",
     "textInput3",
     "checkbox",
-    "footerTop",
-    "container",
-    "footerBottom",
-    "container2"
+    "footerSection"
   ],
   mainSection: [
     "mainSection",
     "pageBanner",
     "navbar",
     "h1",
+    "img",
     "mainSection2",
     "container4",
     "h2",
@@ -1042,11 +729,13 @@ const PlasmicDescendants = {
     "textInput2",
     "select",
     "textInput3",
-    "checkbox"
+    "checkbox",
+    "footerSection"
   ],
-  pageBanner: ["pageBanner", "navbar", "h1"],
+  pageBanner: ["pageBanner", "navbar", "h1", "img"],
   navbar: ["navbar"],
   h1: ["h1"],
+  img: ["img"],
   mainSection2: [
     "mainSection2",
     "container4",
@@ -1072,10 +761,7 @@ const PlasmicDescendants = {
   select: ["select"],
   textInput3: ["textInput3"],
   checkbox: ["checkbox"],
-  footerTop: ["footerTop", "container"],
-  container: ["container"],
-  footerBottom: ["footerBottom", "container2"],
-  container2: ["container2"]
+  footerSection: ["footerSection"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1086,6 +772,7 @@ type NodeDefaultElementType = {
   pageBanner: "div";
   navbar: typeof Navbar;
   h1: "h1";
+  img: typeof PlasmicImg__;
   mainSection2: "div";
   container4: "div";
   h2: "h2";
@@ -1094,10 +781,7 @@ type NodeDefaultElementType = {
   select: typeof Select;
   textInput3: typeof TextInput;
   checkbox: typeof Checkbox;
-  footerTop: "div";
-  container: "div";
-  footerBottom: "div";
-  container2: "div";
+  footerSection: typeof FooterSection;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1164,6 +848,7 @@ export const PlasmicSignUp = Object.assign(
     pageBanner: makeNodeComponent("pageBanner"),
     navbar: makeNodeComponent("navbar"),
     h1: makeNodeComponent("h1"),
+    img: makeNodeComponent("img"),
     mainSection2: makeNodeComponent("mainSection2"),
     container4: makeNodeComponent("container4"),
     h2: makeNodeComponent("h2"),
@@ -1172,10 +857,7 @@ export const PlasmicSignUp = Object.assign(
     select: makeNodeComponent("select"),
     textInput3: makeNodeComponent("textInput3"),
     checkbox: makeNodeComponent("checkbox"),
-    footerTop: makeNodeComponent("footerTop"),
-    container: makeNodeComponent("container"),
-    footerBottom: makeNodeComponent("footerBottom"),
-    container2: makeNodeComponent("container2"),
+    footerSection: makeNodeComponent("footerSection"),
 
     // Metadata about props expected for PlasmicSignUp
     internalVariantProps: PlasmicSignUp__VariantProps,
