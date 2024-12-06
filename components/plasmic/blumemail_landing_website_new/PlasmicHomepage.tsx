@@ -220,7 +220,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "Analytics for developers can be better"
-                      : "Analytics for \ndevelopers can\nbe better"}
+                      : "The Premier Email Service."}
                   </h1>
                   <div
                     className={classNames(
@@ -231,7 +231,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                      : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+                      : "Blumemail is the premier email service for everybody. We\u2019re talking business, yourself, projects or honestly anything."}
                   </div>
                   <Stack__
                     as={"div"}
@@ -279,7 +279,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       >
                         {hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "Try Demo For Free"
-                          : "Try Demo For Free"}
+                          : "Try Blummeail"}
                       </div>
                     </Button>
                     <Button
@@ -316,7 +316,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       >
                         {hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "Learn More"
-                          : "Learn More"}
+                          : "Login to Webmail"}
                       </div>
                     </Button>
                   </Stack__>
