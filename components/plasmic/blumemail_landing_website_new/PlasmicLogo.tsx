@@ -185,10 +185,10 @@ function PlasmicLogo__RenderFunc(props: {
           [sty.img_50Opaque]: hasVariant($state, "_50Opaque", "_50Opaque"),
           [sty.imgsmallLogo]: hasVariant($state, "smallLogo", "smallLogo")
         })}
-        displayHeight={"100%"}
+        displayHeight={"109px"}
         displayMaxHeight={"none"}
         displayMaxWidth={
-          hasVariant($state, "smallLogo", "smallLogo") ? "50px" : "none"
+          hasVariant($state, "smallLogo", "smallLogo") ? "50px" : "473px"
         }
         displayMinHeight={"0"}
         displayMinWidth={"0"}
@@ -202,10 +202,10 @@ function PlasmicLogo__RenderFunc(props: {
                 aspectRatio: undefined
               }
             : {
-                src: "/plasmic/blumemail_landing_website_new/images/logoPng.png",
-                fullWidth: 224,
-                fullHeight: 50,
-                aspectRatio: undefined
+                src: "/plasmic/blumemail_landing_website_new/images/blumemailNewSvg.svg",
+                fullWidth: 250,
+                fullHeight: 156,
+                aspectRatio: 1.602564
               }
         }
       />

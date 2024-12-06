@@ -444,10 +444,10 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/blumemail_landing_website_new/images/diagramSvg.svg",
-                      fullWidth: 173,
-                      fullHeight: 150,
-                      aspectRatio: 1.151631
+                      src: "/plasmic/blumemail_landing_website_new/images/blummeailPng.png",
+                      fullWidth: 904,
+                      fullHeight: 618,
+                      aspectRatio: undefined
                     }}
                   />
                 </div>

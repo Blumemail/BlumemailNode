@@ -213,6 +213,104 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "ZDG0kiEs47Qf",
+          "name": "SignUp",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicSignUp.tsx",
+          "importSpec": {
+            "modulePath": "../pages/sign-up.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicSignUp.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/sign-up"
+        },
+        {
+          "id": "NOrjTyDBFUg5",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicTextInput.tsx",
+          "importSpec": {
+            "modulePath": "TextInput.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
+        },
+        {
+          "id": "LpAmBeqBLDyE",
+          "name": "Checkbox",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicCheckbox.tsx",
+          "importSpec": {
+            "modulePath": "Checkbox.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicCheckbox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "checkbox"
+        },
+        {
+          "id": "h50HF9iyKgoV",
+          "name": "Select",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect.tsx",
+          "importSpec": {
+            "modulePath": "Select.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select"
+        },
+        {
+          "id": "IQmfVi47Ej7J",
+          "name": "Select__Option",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect__Option.tsx",
+          "importSpec": {
+            "modulePath": "Select__Option.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect__Option.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option"
+        },
+        {
+          "id": "WEb60MSSF2m4",
+          "name": "Select__OptionGroup",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect__OptionGroup.tsx",
+          "importSpec": {
+            "modulePath": "Select__OptionGroup.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect__OptionGroup.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option-group"
+        },
+        {
+          "id": "LE1Bx3-Ekm0U",
+          "name": "Select__Overlay",
+          "type": "managed",
+          "projectId": "iqYHqr3pWfj21KAZNGZebV",
+          "renderModuleFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect__Overlay.tsx",
+          "importSpec": {
+            "modulePath": "Select__Overlay.tsx"
+          },
+          "cssFilePath": "plasmic/blumemail_landing_website_new/PlasmicSelect__Overlay.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "triggered-overlay"
         }
       ],
       "icons": [
@@ -290,6 +388,36 @@
           "id": "VPcrDbZqojYk",
           "name": "HandshakeSvgrepoComSvgIcon",
           "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__HandshakeSvgrepoComSvg.tsx"
+        },
+        {
+          "id": "TUKQU3OkVnJX",
+          "name": "SearchSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__SearchSvg.tsx"
+        },
+        {
+          "id": "PSTUeM190QNw",
+          "name": "SquareSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__SquareSvg.tsx"
+        },
+        {
+          "id": "XmhKGfoH6ypP",
+          "name": "SquareCheckFilledSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__SquareCheckFilledSvg.tsx"
+        },
+        {
+          "id": "ZWWFAreHoHm8",
+          "name": "SquareMinusSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__SquareMinusSvg.tsx"
+        },
+        {
+          "id": "O8AhCI2vd_Hl",
+          "name": "ChevronDownSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__ChevronDownSvg.tsx"
+        },
+        {
+          "id": "bzxugCVBLot_",
+          "name": "ChevronUpSvgIcon",
+          "moduleFilePath": "plasmic/blumemail_landing_website_new/icons/PlasmicIcon__ChevronUpSvg.tsx"
         }
       ],
       "images": [
@@ -502,6 +630,26 @@
           "id": "9-7lzyGVjMUT",
           "name": "blog-2-390x290.jpg 2",
           "filePath": "../public/plasmic/blumemail_landing_website_new/images/blog2390X290Jpg2.jpg"
+        },
+        {
+          "id": "3xn3aKBsW2Pk",
+          "name": "stephen-phillips-hostreviews-co-uk-3Mhgvrk4tjM-unsplash.jpg",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/stephenPhillipsHostreviewsCoUk3Mhgvrk4TjMUnsplashJpg.jpg"
+        },
+        {
+          "id": "9ON6tfX6to5K",
+          "name": "green-chameleon-s9CC2SKySJM-unsplash.jpg",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/greenChameleonS9Cc2SKySjmUnsplashJpg.jpg"
+        },
+        {
+          "id": "u27rFtDCnOar",
+          "name": "BLUMMEAIL.PNG",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/blummeailPng.png"
+        },
+        {
+          "id": "fzU7xehMFG80",
+          "name": "Blumemail New.svg",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/blumemailNewSvg.svg"
         }
       ],
       "indirect": false,

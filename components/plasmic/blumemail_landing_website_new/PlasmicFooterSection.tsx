@@ -69,10 +69,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: iqYHqr3pWfj21KAZNGZebV/projectcss
 import sty from "./PlasmicFooterSection.module.css"; // plasmic-import: pJ7Xt-Q9Heqm/css
 
-import FacebookSvgIcon from "./icons/PlasmicIcon__FacebookSvg"; // plasmic-import: Difz_oK8bKlb/icon
-import TwitterSvgIcon from "./icons/PlasmicIcon__TwitterSvg"; // plasmic-import: ZkaA7Vbz300b/icon
 import InstagramSvgIcon from "./icons/PlasmicIcon__InstagramSvg"; // plasmic-import: 9DF1kZJJ4VwZ/icon
-import LinkedinSvgIcon from "./icons/PlasmicIcon__LinkedinSvg"; // plasmic-import: 6JetCdiuzxoL/icon
 
 createPlasmicElementProxy;
 
@@ -182,23 +179,8 @@ function PlasmicFooterSection__RenderFunc(props: {
                 }
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__brpAr)}>
-                <FacebookSvgIcon
-                  className={classNames(projectcss.all, sty.svg__tQg9Q)}
-                  role={"img"}
-                />
-
-                <TwitterSvgIcon
-                  className={classNames(projectcss.all, sty.svg__ixSqd)}
-                  role={"img"}
-                />
-
                 <InstagramSvgIcon
                   className={classNames(projectcss.all, sty.svg__oFJzR)}
-                  role={"img"}
-                />
-
-                <LinkedinSvgIcon
-                  className={classNames(projectcss.all, sty.svg__pKgL)}
                   role={"img"}
                 />
               </div>
