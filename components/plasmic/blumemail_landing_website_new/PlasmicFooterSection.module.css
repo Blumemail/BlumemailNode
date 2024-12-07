@@ -135,8 +135,11 @@
   align-self: auto;
   left: auto;
   top: auto;
-  right: auto;
-  width: auto;
+  width: 306px;
+  margin-right: 0px;
+  height: 99px;
+  margin-bottom: 0px;
+  flex-shrink: 0;
 }
 @media (min-width: 0px) and (max-width: 930px) {
   .logo:global(.__wab_instance) {

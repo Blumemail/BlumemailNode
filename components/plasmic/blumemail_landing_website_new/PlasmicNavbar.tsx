@@ -187,7 +187,7 @@ function PlasmicNavbar__RenderFunc(props: {
             }
             submitsForm={true}
           >
-            {"Product"}
+            {"Donate!"}
           </Button>
           <Button
             className={classNames("__wab_instance", sty.button__hbxcu)}
@@ -207,47 +207,7 @@ function PlasmicNavbar__RenderFunc(props: {
             }
             submitsForm={true}
           >
-            {"Purchase"}
-          </Button>
-          <Button
-            className={classNames("__wab_instance", sty.button__rdTtg)}
-            color={"navLink"}
-            endIcon={
-              <svg
-                className={classNames(projectcss.all, sty.svg__nXqOb)}
-                role={"img"}
-              />
-            }
-            link={"#"}
-            startIcon={
-              <svg
-                className={classNames(projectcss.all, sty.svg___80FbS)}
-                role={"img"}
-              />
-            }
-            submitsForm={true}
-          >
-            {"How it Work"}
-          </Button>
-          <Button
-            className={classNames("__wab_instance", sty.button__u2Zs9)}
-            color={"navLink"}
-            endIcon={
-              <svg
-                className={classNames(projectcss.all, sty.svg__eQecl)}
-                role={"img"}
-              />
-            }
-            link={"#"}
-            startIcon={
-              <svg
-                className={classNames(projectcss.all, sty.svg__sCkwW)}
-                role={"img"}
-              />
-            }
-            submitsForm={true}
-          >
-            {"About us"}
+            {"Meet The Founder"}
           </Button>
         </Stack__>
         <div className={classNames(projectcss.all, sty.freeBox__mMrj9)}>
@@ -289,7 +249,7 @@ function PlasmicNavbar__RenderFunc(props: {
             }
             submitsForm={true}
           >
-            {"Sign Up"}
+            {"Get Blumemail"}
           </Button>
         </div>
       </Stack__>

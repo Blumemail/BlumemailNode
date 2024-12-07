@@ -406,6 +406,11 @@
           "id": "Rcdn9Sg0GZw9",
           "name": "galleri2-1.png",
           "filePath": "../public/plasmic/blumemail_landing_website_new/images/galleri21Png.png"
+        },
+        {
+          "id": "HTN2eDZ6xXw7",
+          "name": "Blumemail New (White).svg",
+          "filePath": "../public/plasmic/blumemail_landing_website_new/images/blumemailNewWhiteSvg.svg"
         }
       ],
       "indirect": false,

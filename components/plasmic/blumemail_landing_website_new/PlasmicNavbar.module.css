@@ -95,6 +95,9 @@
     margin-top: 16px;
   }
 }
+.logo:global(.__wab_instance) {
+  height: 112px;
+}
 .freeBox__cugzi {
   display: flex;
   position: relative;
@@ -162,36 +165,6 @@
   object-fit: cover;
 }
 .svg___3V81K {
-  width: 24px;
-  height: 24px;
-  position: relative;
-  object-fit: cover;
-}
-.button__rdTtg:global(.__wab_instance) {
-  position: relative;
-}
-.svg___80FbS {
-  width: 24px;
-  height: 24px;
-  position: relative;
-  object-fit: cover;
-}
-.svg__nXqOb {
-  width: 24px;
-  height: 24px;
-  position: relative;
-  object-fit: cover;
-}
-.button__u2Zs9:global(.__wab_instance) {
-  position: relative;
-}
-.svg__sCkwW {
-  width: 24px;
-  height: 24px;
-  position: relative;
-  object-fit: cover;
-}
-.svg__eQecl {
   width: 24px;
   height: 24px;
   position: relative;

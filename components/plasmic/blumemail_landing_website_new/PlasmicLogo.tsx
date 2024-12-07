@@ -202,10 +202,10 @@ function PlasmicLogo__RenderFunc(props: {
                 aspectRatio: undefined
               }
             : {
-                src: "/plasmic/blumemail_landing_website_new/images/logoPng.png",
-                fullWidth: 224,
-                fullHeight: 50,
-                aspectRatio: undefined
+                src: "/plasmic/blumemail_landing_website_new/images/blumemailNewWhiteSvg.svg",
+                fullWidth: 250,
+                fullHeight: 156,
+                aspectRatio: 1.602564
               }
         }
       />
