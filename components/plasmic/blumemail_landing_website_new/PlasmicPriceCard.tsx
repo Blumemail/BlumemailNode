@@ -246,10 +246,10 @@ function PlasmicPriceCard__RenderFunc(props: {
           )}
         >
           {hasVariant($state, "borders", "flatRight")
-            ? "Enterprise"
+            ? "Silver 10GB"
             : hasVariant($state, "borders", "flatLeft")
-            ? "Free"
-            : "Pro"}
+            ? "Bronze 1GB"
+            : "Bronze 1GB"}
         </h4>
         <div
           className={classNames(
@@ -281,29 +281,11 @@ function PlasmicPriceCard__RenderFunc(props: {
           )}
         >
           {hasVariant($state, "borders", "flatRight")
-            ? "Flexible power and security"
+            ? "More storage means more power."
             : hasVariant($state, "borders", "flatLeft")
-            ? "A complete analytics platform."
-            : "A complete analytics platform."}
+            ? "Our cheapest plan, yet brings all the power of Blumemail to you.\n\n"
+            : "Our cheapest plan, yet brings all the power of Blumemail to you.\n\n"}
         </div>
-        <PlasmicImg__
-          alt={""}
-          className={classNames(sty.img__daQty)}
-          displayHeight={"auto"}
-          displayMaxHeight={"none"}
-          displayMaxWidth={"100%"}
-          displayMinHeight={"0"}
-          displayMinWidth={"0"}
-          displayWidth={"auto"}
-          loading={"lazy"}
-          src={{
-            src: "/plasmic/blumemail_landing_website_new/images/linePricingPng.png",
-            fullWidth: 300,
-            fullHeight: 2,
-            aspectRatio: undefined
-          }}
-        />
-
         <div
           className={classNames(projectcss.all, sty.columns__qiQ6P, {
             [sty.columnsprimary__qiQ6PrrJer]: hasVariant(
@@ -381,228 +363,12 @@ function PlasmicPriceCard__RenderFunc(props: {
               )}
             >
               {hasVariant($state, "borders", "flatRight")
-                ? "Everything in pro"
+                ? "Everything in Bronze, but just more storage."
                 : hasVariant($state, "borders", "flatLeft")
-                ? "1 Product"
+                ? "Perfect for Lightweight emails."
                 : "Up to 10 projects"}
             </div>
           </div>
-        </div>
-        <div
-          className={classNames(projectcss.all, sty.columns__mWudD, {
-            [sty.columnsborders_flatCenter__mWudDfbrxF]: hasVariant(
-              $state,
-              "borders",
-              "flatCenter"
-            ),
-            [sty.columnsborders_flatLeft__mWudDoFBp6]: hasVariant(
-              $state,
-              "borders",
-              "flatLeft"
-            ),
-            [sty.columnsborders_flatRight__mWudDdqJIn]: hasVariant(
-              $state,
-              "borders",
-              "flatRight"
-            ),
-            [sty.columnsprimary__mWudDrrJer]: hasVariant(
-              $state,
-              "primary",
-              "primary"
-            )
-          })}
-        >
-          <div className={classNames(projectcss.all, sty.column___5GVhl)}>
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__z5H9I, {
-                [sty.imgborders_flatLeft__z5H9IoFBp6]: hasVariant(
-                  $state,
-                  "borders",
-                  "flatLeft"
-                )
-              })}
-              displayHeight={"24px"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"24px"}
-              loading={"lazy"}
-              src={
-                hasVariant($state, "borders", "flatLeft")
-                  ? {
-                      src: "/plasmic/blumemail_landing_website_new/images/checklistPricingWhitePng.png",
-                      fullWidth: 38,
-                      fullHeight: 39,
-                      aspectRatio: undefined
-                    }
-                  : {
-                      src: "/plasmic/blumemail_landing_website_new/images/checklistPng.png",
-                      fullWidth: 48,
-                      fullHeight: 48,
-                      aspectRatio: undefined
-                    }
-              }
-            />
-          </div>
-          <div className={classNames(projectcss.all, sty.column__u286R)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__iGUuS,
-                {
-                  [sty.textborders_flatCenter__iGUuSfbrxF]: hasVariant(
-                    $state,
-                    "borders",
-                    "flatCenter"
-                  ),
-                  [sty.textborders_flatLeft__iGUuSoFBp6]: hasVariant(
-                    $state,
-                    "borders",
-                    "flatLeft"
-                  ),
-                  [sty.textborders_flatRight__iGUuSdqJIn]: hasVariant(
-                    $state,
-                    "borders",
-                    "flatRight"
-                  ),
-                  [sty.textprimary__iGUuSrrJer]: hasVariant(
-                    $state,
-                    "primary",
-                    "primary"
-                  )
-                }
-              )}
-            >
-              {hasVariant($state, "borders", "flatRight")
-                ? "Volume discount"
-                : hasVariant($state, "borders", "flatLeft")
-                ? "Analytics board"
-                : hasVariant($state, "primary", "primary")
-                ? "Analytics board"
-                : "Up to 10 projects"}
-            </div>
-          </div>
-        </div>
-        <div
-          className={classNames(projectcss.all, sty.columns__njTeC, {
-            [sty.columnsborders_flatCenter__njTeCfbrxF]: hasVariant(
-              $state,
-              "borders",
-              "flatCenter"
-            ),
-            [sty.columnsborders_flatLeft__njTeCoFBp6]: hasVariant(
-              $state,
-              "borders",
-              "flatLeft"
-            ),
-            [sty.columnsprimary__njTeCrrJer]: hasVariant(
-              $state,
-              "primary",
-              "primary"
-            )
-          })}
-        >
-          <div className={classNames(projectcss.all, sty.column__o1Tt)}>
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__rp5VF, {
-                [sty.imgborders_flatLeft__rp5VFoFBp6]: hasVariant(
-                  $state,
-                  "borders",
-                  "flatLeft"
-                )
-              })}
-              displayHeight={"24px"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"24px"}
-              loading={"lazy"}
-              src={
-                hasVariant($state, "borders", "flatLeft")
-                  ? {
-                      src: "/plasmic/blumemail_landing_website_new/images/checklistPricingWhitePng.png",
-                      fullWidth: 38,
-                      fullHeight: 39,
-                      aspectRatio: undefined
-                    }
-                  : {
-                      src: "/plasmic/blumemail_landing_website_new/images/checklistPng.png",
-                      fullWidth: 48,
-                      fullHeight: 48,
-                      aspectRatio: undefined
-                    }
-              }
-            />
-          </div>
-          <div
-            className={classNames(projectcss.all, sty.column__wCd1E, {
-              [sty.columnborders_flatLeft__wCd1EoFBp6]: hasVariant(
-                $state,
-                "borders",
-                "flatLeft"
-              ),
-              [sty.columnborders_flatRight__wCd1EdqJIn]: hasVariant(
-                $state,
-                "borders",
-                "flatRight"
-              ),
-              [sty.columnprimary__wCd1ErrJer]: hasVariant(
-                $state,
-                "primary",
-                "primary"
-              )
-            })}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__e06PU,
-                {
-                  [sty.textborders_flatLeft__e06PUoFBp6]: hasVariant(
-                    $state,
-                    "borders",
-                    "flatLeft"
-                  ),
-                  [sty.textprimary__e06PUrrJer]: hasVariant(
-                    $state,
-                    "primary",
-                    "primary"
-                  )
-                }
-              )}
-            >
-              {hasVariant($state, "borders", "flatLeft")
-                ? "Insights panel"
-                : hasVariant($state, "primary", "primary")
-                ? "Analytics board"
-                : "Up to 10 projects"}
-            </div>
-          </div>
-          <div
-            className={classNames(projectcss.all, sty.column___7OekK, {
-              [sty.columnborders_flatLeft___7OekKoFBp6]: hasVariant(
-                $state,
-                "borders",
-                "flatLeft"
-              ),
-              [sty.columnborders_flatRight___7OekKdqJIn]: hasVariant(
-                $state,
-                "borders",
-                "flatRight"
-              ),
-              [sty.columnprimary___7OekKrrJer]: hasVariant(
-                $state,
-                "primary",
-                "primary"
-              )
-            })}
-          />
         </div>
         {(
           hasVariant($state, "borders", "flatCenter")
@@ -689,7 +455,7 @@ function PlasmicPriceCard__RenderFunc(props: {
                 )}
               >
                 {hasVariant($state, "borders", "flatLeft")
-                  ? "CLI access"
+                  ? "Our Privacy commitment, included in all of our plans."
                   : hasVariant($state, "primary", "primary")
                   ? "Analytics board"
                   : "Up to 10 projects"}
@@ -1000,40 +766,12 @@ function PlasmicPriceCard__RenderFunc(props: {
             {hasVariant($state, "borders", "flatCenter")
               ? "$ 50"
               : hasVariant($state, "borders", "flatRight")
-              ? "$ 800"
-              : "$ 0"}
+              ? "$10/mo\nthat\u2019s (once again) $15/yr"
+              : hasVariant($state, "borders", "flatLeft")
+              ? "$5/mo\nthat\u2019s $10/yr"
+              : "$1/mo\nthat\u2019s $5/yr"}
           </div>
         ) : null}
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text__g6Haz,
-            {
-              [sty.textborders_flatCenter__g6HaZfbrxF]: hasVariant(
-                $state,
-                "borders",
-                "flatCenter"
-              ),
-              [sty.textborders_flatLeft__g6HaZoFBp6]: hasVariant(
-                $state,
-                "borders",
-                "flatLeft"
-              ),
-              [sty.textborders_flatRight__g6HaZdqJIn]: hasVariant(
-                $state,
-                "borders",
-                "flatRight"
-              )
-            }
-          )}
-        >
-          {hasVariant($state, "borders", "flatRight")
-            ? "Starting price, customizable"
-            : hasVariant($state, "borders", "flatLeft")
-            ? "Free Forever"
-            : "per project/month"}
-        </div>
         <Button
           data-plasmic-name={"button"}
           data-plasmic-override={overrides.button}
@@ -1098,10 +836,10 @@ function PlasmicPriceCard__RenderFunc(props: {
             {hasVariant($state, "borders", "flatCenter")
               ? "Go Become pro"
               : hasVariant($state, "borders", "flatRight")
-              ? "Everything is yours"
+              ? "Get Blumemail"
               : hasVariant($state, "borders", "flatLeft")
-              ? "Claim Free"
-              : "Go Become pro"}
+              ? "Get Blumemail."
+              : "Get Blumemail"}
           </div>
         </Button>
       </div>

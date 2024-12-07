@@ -61,11 +61,12 @@ import {
 
 import Navbar from "../../Navbar"; // plasmic-import: X0bdkv4xmtEE/component
 import Button from "../../Button"; // plasmic-import: IKalveoma9Lb/component
-import Section from "../../Section"; // plasmic-import: ugejia25uuRX/component
 import Tilt from "@plasmicpkgs/react-parallax-tilt";
-import DiagramCard from "../../DiagramCard"; // plasmic-import: zDHt8RNREuHR/component
-import ProductCard from "../../ProductCard"; // plasmic-import: 0HkxE5m16msS/component
-import DetailAbout from "../../DetailAbout"; // plasmic-import: nAsFMT_b1Eiv/component
+import Section from "../../Section"; // plasmic-import: ugejia25uuRX/component
+import FeatureDomainLink from "../../FeatureDomainLink"; // plasmic-import: I8KS5uaZZ564/component
+import FeatureCustomerSupport from "../../FeatureCustomerSupport"; // plasmic-import: U_J8NNhBz4xx/component
+import FeatureEmailClient from "../../FeatureEmailClient"; // plasmic-import: idYTpKrgILpV/component
+import FeatureAutoBurn from "../../FeatureAutoBurn"; // plasmic-import: 0HkxE5m16msS/component
 import PriceSection from "../../PriceSection"; // plasmic-import: aZ_oilqttiCe/component
 import PriceCard from "../../PriceCard"; // plasmic-import: 9tRKoAxzr92y/component
 import FooterSection from "../../FooterSection"; // plasmic-import: pJ7Xt-Q9Heqm/component
@@ -94,13 +95,14 @@ export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   headerHeroSection?: Flex__<"div">;
   navbar?: Flex__<typeof Navbar>;
-  h1?: Flex__<"h1">;
   diagramSection?: Flex__<typeof Section>;
-  tilt?: Flex__<typeof Tilt>;
-  diagramCard?: Flex__<typeof DiagramCard>;
   deviceSection?: Flex__<typeof Section>;
   gallerySection?: Flex__<typeof Section>;
   productSection?: Flex__<typeof Section>;
+  featureDomainLink?: Flex__<typeof FeatureDomainLink>;
+  featureCustomerSupport?: Flex__<typeof FeatureCustomerSupport>;
+  featureEmailClient?: Flex__<typeof FeatureEmailClient>;
+  featureAutoBurn?: Flex__<typeof FeatureAutoBurn>;
   aboutSection?: Flex__<typeof Section>;
   priceSection?: Flex__<typeof PriceSection>;
   startSection?: Flex__<typeof Section>;
@@ -212,13 +214,11 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 <div className={classNames(projectcss.all, sty.freeBox__gavgk)}>
                   <h1
-                    data-plasmic-name={"h1"}
-                    data-plasmic-override={overrides.h1}
                     className={classNames(
                       projectcss.all,
                       projectcss.h1,
                       projectcss.__wab_text,
-                      sty.h1
+                      sty.h1__yYzSu
                     )}
                   >
                     {hasVariant(globalVariants, "screen", "mobileOnly")
@@ -391,31 +391,35 @@ function PlasmicHomepage__RenderFunc(props: {
                   ) : null}
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__eYexS)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__u21Wr)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"none"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "0px"
-                        : "661px"
-                    }
-                    displayWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "100%"
-                        : "100%"
-                    }
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/blumemail_landing_website_new/images/diagramSvg.svg",
-                      fullWidth: 173,
-                      fullHeight: 150,
-                      aspectRatio: 1.151631
-                    }}
-                  />
+                  <Tilt
+                    className={classNames("__wab_instance", sty.tilt__lAcF)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__u21Wr)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"none"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "0px"
+                          : "0"
+                      }
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "100%"
+                      }
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/blumemail_landing_website_new/images/logoInSilverSvg.svg",
+                        fullWidth: 345,
+                        fullHeight: 275,
+                        aspectRatio: 1.254545
+                      }}
+                    />
+                  </Tilt>
                 </div>
               </Stack__>
             </div>
@@ -494,7 +498,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
               >
                 {hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "Lorem ipsum dolor \nsit amet"
+                  ? "Email Simply done better."
                   : "Email Simply done better."}
               </h2>
               <div
@@ -505,18 +509,18 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
               >
                 {hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                  : "More privacy, simplicity and worry-free days."}
+                  ? "\nMore privacy, simplicity and worry-free days with Blumemail."
+                  : "\nMore privacy, simplicity and worry-free days with Blumemail."}
               </div>
-              <Tilt
-                data-plasmic-name={"tilt"}
-                data-plasmic-override={overrides.tilt}
-                className={classNames("__wab_instance", sty.tilt)}
-              >
+              <Tilt className={classNames("__wab_instance", sty.tilt__dFSM)}>
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__drVVk)}
-                  displayHeight={"auto"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "143px"
+                      : "auto"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={
                     hasVariant(globalVariants, "screen", "mobileOnly")
@@ -525,49 +529,20 @@ function PlasmicHomepage__RenderFunc(props: {
                   }
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"auto"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "275px"
+                      : "962px"
+                  }
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/blumemail_landing_website_new/images/terminalPng.png",
-                    fullWidth: 624,
-                    fullHeight: 333,
-                    aspectRatio: undefined
+                    src: "/plasmic/blumemail_landing_website_new/images/email1Svg.svg",
+                    fullWidth: 627,
+                    fullHeight: 326,
+                    aspectRatio: 1.923313
                   }}
                 />
               </Tilt>
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__dp8V0)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "auto"
-                    : "auto"
-                }
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/blumemail_landing_website_new/images/line1Png.png",
-                  fullWidth: 11,
-                  fullHeight: 150,
-                  aspectRatio: undefined
-                }}
-              />
-
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___80YM)}
-              >
-                <DiagramCard
-                  data-plasmic-name={"diagramCard"}
-                  data-plasmic-override={overrides.diagramCard}
-                  className={classNames("__wab_instance", sty.diagramCard)}
-                />
-              </Stack__>
             </div>
           </Section>
           <Section
@@ -600,8 +575,8 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
               >
                 {hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua."
-                  : "\nHave any questions? Or any issues?? Our team can easily resolve it in under an hour.\nAnd did I also forget that we've got agents all around the world?"}
+                  ? "\nHave any questions? Or any issues. Our team can easily resolve it in under an hour.\nAnd did I also forget that we've got agents all around the world?\n\nand it's included in all of our plans."
+                  : "\nHave any questions? Or any issues. Our team can easily resolve it in under an hour.\nAnd did I also forget that we've got agents all around the world?\n\nand it's included in all of our plans."}
               </div>
             </div>
             <PlasmicImg__
@@ -633,124 +608,7 @@ function PlasmicHomepage__RenderFunc(props: {
             size={"fullContentGallery"}
           >
             <div className={classNames(projectcss.all, sty.freeBox__huRss)}>
-              <div className={classNames(projectcss.all, sty.columns__lCOoN)}>
-                <div className={classNames(projectcss.all, sty.column__sOjN)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__ytE)}
-                    displayHeight={"100%"}
-                    displayMaxHeight={"300px"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/blumemail_landing_website_new/images/galleri11Png.png",
-                      fullWidth: 700,
-                      fullHeight: 300,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
-                <div className={classNames(projectcss.all, sty.column__w441)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img___2IlwC)}
-                    displayHeight={"100%"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/blumemail_landing_website_new/images/galleri12Png.png",
-                      fullWidth: 700,
-                      fullHeight: 300,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
-                <div className={classNames(projectcss.all, sty.column__uCjNr)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__bfdWi)}
-                    displayHeight={"100%"}
-                    displayMaxHeight={"300px"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/blumemail_landing_website_new/images/galleri13Png.png",
-                      fullWidth: 700,
-                      fullHeight: 300,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.columns__vx1Ek)}>
-                <div className={classNames(projectcss.all, sty.column__wBWsv)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__apOcz)}
-                    displayHeight={"100%"}
-                    displayMaxHeight={"300px"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/blumemail_landing_website_new/images/galleri21Png.png",
-                      fullWidth: 700,
-                      fullHeight: 300,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
-                <div className={classNames(projectcss.all, sty.column__l17H2)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__fZiTf)}
-                    displayHeight={"100%"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/blumemail_landing_website_new/images/galleri22Png.png",
-                      fullWidth: 700,
-                      fullHeight: 300,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
-                <div className={classNames(projectcss.all, sty.column__hpN7)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__rYDgA)}
-                    displayHeight={"100%"}
-                    displayMaxHeight={"300px"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/blumemail_landing_website_new/images/galleri23Png.png",
-                      fullWidth: 700,
-                      fullHeight: 300,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
-              </div>
+              <div className={classNames(projectcss.all, sty.columns__vx1Ek)} />
             </div>
           </Section>
           <Section
@@ -781,58 +639,28 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.text__o3ZQ7
                 )}
               >
-                {"With Blumemail, you get "}
+                {"With Blumemail, you get a ton of features including these!"}
               </div>
-              <Button
-                className={classNames("__wab_instance", sty.button__b7Uuh)}
-                color={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "blue"
-                    : "blue"
-                }
-                endIcon={
-                  <svg
-                    className={classNames(projectcss.all, sty.svg__c0Oy9)}
-                    role={"img"}
-                  />
-                }
-                link={"#"}
-                startIcon={
-                  <svg
-                    className={classNames(projectcss.all, sty.svg__doIoo)}
-                    role={"img"}
-                  />
-                }
-                submitsForm={true}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___5AS3L
-                  )}
-                >
-                  {hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "Get Started"
-                    : "Get Started"}
-                </div>
-              </Button>
               <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox___5RTP)}
               >
-                <ProductCard
+                <FeatureDomainLink
+                  data-plasmic-name={"featureDomainLink"}
+                  data-plasmic-override={overrides.featureDomainLink}
                   className={classNames(
                     "__wab_instance",
-                    sty.productCard__ceLz
+                    sty.featureDomainLink
                   )}
                 />
 
-                <ProductCard
+                <FeatureCustomerSupport
+                  data-plasmic-name={"featureCustomerSupport"}
+                  data-plasmic-override={overrides.featureCustomerSupport}
                   className={classNames(
                     "__wab_instance",
-                    sty.productCard__ss2A
+                    sty.featureCustomerSupport
                   )}
                 />
               </Stack__>
@@ -841,18 +669,19 @@ function PlasmicHomepage__RenderFunc(props: {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox___3ZhH2)}
               >
-                <ProductCard
+                <FeatureEmailClient
+                  data-plasmic-name={"featureEmailClient"}
+                  data-plasmic-override={overrides.featureEmailClient}
                   className={classNames(
                     "__wab_instance",
-                    sty.productCard__iHryi
+                    sty.featureEmailClient
                   )}
                 />
 
-                <ProductCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.productCard___25Mmc
-                  )}
+                <FeatureAutoBurn
+                  data-plasmic-name={"featureAutoBurn"}
+                  data-plasmic-override={overrides.featureAutoBurn}
+                  className={classNames("__wab_instance", sty.featureAutoBurn)}
                 />
               </Stack__>
             </div>
@@ -879,7 +708,7 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 {hasVariant(globalVariants, "screen", "mobileOnly")
                   ? "What people say \nabout us"
-                  : "What people say about us"}
+                  : "What real Blumemail customers are saying.\n"}
               </h2>
               <div className={classNames(projectcss.all, sty.freeBox__mcKGs)}>
                 <div className={classNames(projectcss.all, sty.freeBox__xSdo)}>
@@ -895,12 +724,12 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"auto"}
+                    displayWidth={"490px"}
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/blumemail_landing_website_new/images/aboutImgPng.png",
-                      fullWidth: 400,
-                      fullHeight: 500,
+                      src: "/plasmic/blumemail_landing_website_new/images/icognitoPrintPng.png",
+                      fullWidth: 910,
+                      fullHeight: 552,
                       aspectRatio: undefined
                     }}
                   />
@@ -916,29 +745,11 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.h2__u46BZ
                     )}
                   >
-                    {"Michael Justin"}
+                    {"S**** G****"}
                   </h2>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__z5AbB)}
                   >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__xdaCc)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/blumemail_landing_website_new/images/aboutIpsumPng.png",
-                        fullWidth: 152,
-                        fullHeight: 40,
-                        aspectRatio: undefined
-                      }}
-                    />
-
                     <div
                       className={classNames(
                         projectcss.all,
@@ -948,7 +759,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     >
                       {hasVariant(globalVariants, "screen", "mobileOnly")
                         ? "CEO Company"
-                        : "CEO Company"}
+                        : "Censored for privacy."}
                     </div>
                   </div>
                   <div
@@ -985,62 +796,10 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                      : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+                      : "I love the idea of this website and service. The website is clean, easy to use, and the logo is beautiful!"}
                   </div>
                 </div>
               </div>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___3Ah4U)}
-              >
-                <DetailAbout
-                  className={classNames(
-                    "__wab_instance",
-                    sty.detailAbout__qnLhy
-                  )}
-                />
-
-                <DetailAbout
-                  className={classNames(
-                    "__wab_instance",
-                    sty.detailAbout__iYyIs
-                  )}
-                />
-
-                <DetailAbout
-                  className={classNames(
-                    "__wab_instance",
-                    sty.detailAbout__cKpQa
-                  )}
-                />
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__oeBU)}
-              >
-                <DetailAbout
-                  className={classNames(
-                    "__wab_instance",
-                    sty.detailAbout__eoR0W
-                  )}
-                />
-
-                <DetailAbout
-                  className={classNames(
-                    "__wab_instance",
-                    sty.detailAbout__jZvMu
-                  )}
-                />
-
-                <DetailAbout
-                  className={classNames(
-                    "__wab_instance",
-                    sty.detailAbout__hiyiG
-                  )}
-                />
-              </Stack__>
               <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__kLToH)}
@@ -1078,6 +837,16 @@ function PlasmicHomepage__RenderFunc(props: {
               />
             </div>
           </Section>
+          <h1
+            className={classNames(
+              projectcss.all,
+              projectcss.h1,
+              projectcss.__wab_text,
+              sty.h1__yqg7
+            )}
+          >
+            {"      \nDiscover our plans and see which one's right for you."}
+          </h1>
           <PriceSection
             data-plasmic-name={"priceSection"}
             data-plasmic-override={overrides.priceSection}
@@ -1123,7 +892,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "Start using our product today"
-                      : "Start using our product today"}
+                      : "Did you like our \nintroduction?"}
                   </h3>
                   <div
                     className={classNames(
@@ -1134,7 +903,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "Faster than free analytics tools. Access to all your data, with respect to the privacy of your users."
-                      : "Faster than free analytics tools. Access to all your data, with respect to the privacy of your users."}
+                      : "Blumemail is one of a few email providers that actually cares.\n\n"}
                   </div>
                 </div>
                 <div className={classNames(projectcss.all, sty.column__opw2U)}>
@@ -1165,7 +934,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     >
                       {hasVariant(globalVariants, "screen", "mobileOnly")
                         ? "Get Started"
-                        : "Get Started"}
+                        : "Get Blumemail"}
                     </div>
                   </Button>
                 </div>
@@ -1245,13 +1014,14 @@ const PlasmicDescendants = {
     "root",
     "headerHeroSection",
     "navbar",
-    "h1",
     "diagramSection",
-    "tilt",
-    "diagramCard",
     "deviceSection",
     "gallerySection",
     "productSection",
+    "featureDomainLink",
+    "featureCustomerSupport",
+    "featureEmailClient",
+    "featureAutoBurn",
     "aboutSection",
     "priceSection",
     "startSection",
@@ -1259,15 +1029,22 @@ const PlasmicDescendants = {
     "pricingSection",
     "footerSection"
   ],
-  headerHeroSection: ["headerHeroSection", "navbar", "h1"],
+  headerHeroSection: ["headerHeroSection", "navbar"],
   navbar: ["navbar"],
-  h1: ["h1"],
-  diagramSection: ["diagramSection", "tilt", "diagramCard"],
-  tilt: ["tilt"],
-  diagramCard: ["diagramCard"],
+  diagramSection: ["diagramSection"],
   deviceSection: ["deviceSection"],
   gallerySection: ["gallerySection"],
-  productSection: ["productSection"],
+  productSection: [
+    "productSection",
+    "featureDomainLink",
+    "featureCustomerSupport",
+    "featureEmailClient",
+    "featureAutoBurn"
+  ],
+  featureDomainLink: ["featureDomainLink"],
+  featureCustomerSupport: ["featureCustomerSupport"],
+  featureEmailClient: ["featureEmailClient"],
+  featureAutoBurn: ["featureAutoBurn"],
   aboutSection: ["aboutSection"],
   priceSection: ["priceSection"],
   startSection: ["startSection", "h3"],
@@ -1282,13 +1059,14 @@ type NodeDefaultElementType = {
   root: "div";
   headerHeroSection: "div";
   navbar: typeof Navbar;
-  h1: "h1";
   diagramSection: typeof Section;
-  tilt: typeof Tilt;
-  diagramCard: typeof DiagramCard;
   deviceSection: typeof Section;
   gallerySection: typeof Section;
   productSection: typeof Section;
+  featureDomainLink: typeof FeatureDomainLink;
+  featureCustomerSupport: typeof FeatureCustomerSupport;
+  featureEmailClient: typeof FeatureEmailClient;
+  featureAutoBurn: typeof FeatureAutoBurn;
   aboutSection: typeof Section;
   priceSection: typeof PriceSection;
   startSection: typeof Section;
@@ -1359,13 +1137,14 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     headerHeroSection: makeNodeComponent("headerHeroSection"),
     navbar: makeNodeComponent("navbar"),
-    h1: makeNodeComponent("h1"),
     diagramSection: makeNodeComponent("diagramSection"),
-    tilt: makeNodeComponent("tilt"),
-    diagramCard: makeNodeComponent("diagramCard"),
     deviceSection: makeNodeComponent("deviceSection"),
     gallerySection: makeNodeComponent("gallerySection"),
     productSection: makeNodeComponent("productSection"),
+    featureDomainLink: makeNodeComponent("featureDomainLink"),
+    featureCustomerSupport: makeNodeComponent("featureCustomerSupport"),
+    featureEmailClient: makeNodeComponent("featureEmailClient"),
+    featureAutoBurn: makeNodeComponent("featureAutoBurn"),
     aboutSection: makeNodeComponent("aboutSection"),
     priceSection: makeNodeComponent("priceSection"),
     startSection: makeNodeComponent("startSection"),

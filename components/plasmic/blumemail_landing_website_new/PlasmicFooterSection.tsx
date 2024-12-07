@@ -178,7 +178,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                 )}
               >
                 {
-                  "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit, sed do eiusmod tempor"
+                  "Your Mail, Well Deserved.\nCustomer Support:\nsupport@blumemail.net"
                 }
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__brpAr)}>
@@ -203,130 +203,6 @@ function PlasmicFooterSection__RenderFunc(props: {
                 />
               </div>
             </div>
-          </div>
-          <div className={classNames(projectcss.all, sty.column__o6QPn)}>
-            <h4
-              className={classNames(
-                projectcss.all,
-                projectcss.h4,
-                projectcss.__wab_text,
-                sty.h4__ksHzG
-              )}
-            >
-              {"Menu"}
-            </h4>
-            <Button
-              className={classNames("__wab_instance", sty.button__ekL3)}
-              color={"footerButton"}
-              endIcon={
-                <svg
-                  className={classNames(projectcss.all, sty.svg__tMcbI)}
-                  role={"img"}
-                />
-              }
-              link={"#"}
-              startIcon={
-                <svg
-                  className={classNames(projectcss.all, sty.svg___2Xzpa)}
-                  role={"img"}
-                />
-              }
-              submitsForm={true}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__f5HBu
-                )}
-              >
-                {"Product"}
-              </div>
-            </Button>
-            <Button
-              className={classNames("__wab_instance", sty.button___76Uml)}
-              color={"footerButton"}
-              endIcon={
-                <svg
-                  className={classNames(projectcss.all, sty.svg__j6E)}
-                  role={"img"}
-                />
-              }
-              link={"#"}
-              startIcon={
-                <svg
-                  className={classNames(projectcss.all, sty.svg___8HAkJ)}
-                  role={"img"}
-                />
-              }
-              submitsForm={true}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__ri7Ua
-                )}
-              >
-                {"Purchase"}
-              </div>
-            </Button>
-            <Button
-              className={classNames("__wab_instance", sty.button__ah4Kl)}
-              color={"footerButton"}
-              endIcon={
-                <svg
-                  className={classNames(projectcss.all, sty.svg__lEaIc)}
-                  role={"img"}
-                />
-              }
-              link={"#"}
-              startIcon={
-                <svg
-                  className={classNames(projectcss.all, sty.svg__s7TTh)}
-                  role={"img"}
-                />
-              }
-              submitsForm={true}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__uUbF
-                )}
-              >
-                {"How it Work"}
-              </div>
-            </Button>
-            <Button
-              className={classNames("__wab_instance", sty.button__jEg1S)}
-              color={"footerButton"}
-              endIcon={
-                <svg
-                  className={classNames(projectcss.all, sty.svg__vu474)}
-                  role={"img"}
-                />
-              }
-              link={"#"}
-              startIcon={
-                <svg
-                  className={classNames(projectcss.all, sty.svg__d5M4T)}
-                  role={"img"}
-                />
-              }
-              submitsForm={true}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___6FEcJ
-                )}
-              >
-                {"About us"}
-              </div>
-            </Button>
           </div>
           <div className={classNames(projectcss.all, sty.column__e8Onk)}>
             <h4
@@ -364,7 +240,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                   sty.text__z1Vod
                 )}
               >
-                {"Privacy and\nPolicy"}
+                {"Privacy"}
               </div>
             </Button>
             <Button
@@ -502,7 +378,7 @@ function PlasmicFooterSection__RenderFunc(props: {
             sty.text__g0YOh
           )}
         >
-          {"Copyrights \u00a9 2022 All Rights Reserved by PlasmicApp"}
+          {"Copyright \u00a9 2024 The Blumemail LLC"}
         </div>
       </div>
     </div>
