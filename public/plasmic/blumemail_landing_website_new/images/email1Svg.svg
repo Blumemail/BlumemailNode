@@ -1,0 +1,11 @@
+<svg viewBox="0 0 627 326" version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+  <path fill="none" d="M0 0h626.662v325.243H0z"/>
+  <path d="M575.718 43.469v225.968c0 14.476-11.753 26.228-26.229 26.228H82.883c-14.476 0-26.228-11.752-26.228-26.228V43.469c0-14.476 11.752-26.228 26.228-26.228h466.606c14.476 0 26.229 11.752 26.229 26.228z" fill="#3a3a3a"/>
+  <text x="241.052" y="195.651" font-family="'RedditSans-Regular','Reddit Sans'" font-size="144" fill="#fff">
+    @
+  </text>
+  <ellipse cx="537.927" cy="249.28" rx="68.147" ry="66.822"/>
+  <text x="498.417" y="268.815" font-family="'SegoeUIEmoji','Segoe UI Emoji'" font-size="64.975" fill="#fff">
+    👍
+  </text>
+</svg>
